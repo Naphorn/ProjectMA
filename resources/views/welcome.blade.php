@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Managent Air
+                    Management Air
                 </div>
             </div>
         </div>

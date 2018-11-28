@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Database\Console\Migrations\RollbackCommand;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('statusairs/1','StatusairController@statusairs1')->name('statusairs1');
+Route::resource('statusairs','StatusairController');
+

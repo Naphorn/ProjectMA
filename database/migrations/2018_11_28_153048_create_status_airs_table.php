@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBlogsStatusair extends Migration
+class CreateStatusAirsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateBlogsStatusair extends Migration
      */
     public function up()
     {
-        Schema::create('statusair', function (Blueprint $table) {
+        Schema::create('status_airs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('IP',100);
+            $table->string('RoomNo',100);
             $table->float('CoolTemp');
             $table->float('Humidity');
             $table->float('RoomTemp');
@@ -36,6 +36,6 @@ class CreateBlogsStatusair extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('statusair');
+        Schema::dropIfExists('status_airs');
     }
 }

@@ -9,5 +9,9 @@
     </head>
     <body>
         <h1>Statusair 1 Page</h1>
+        <p>
+            {{$name}}
+            
+        </p>
     </body>
 </html>

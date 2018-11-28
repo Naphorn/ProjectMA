@@ -21,6 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('statusairs/1','StatusairController@statusairs1')->name('statusairs1');
-Route::resource('statusairs','StatusairController');
+Route::get('showstatusair/1','StatusairController@showstatusair1')->name('showstatusair1');
+Route::resource('showstatusair','StatusairController');
 

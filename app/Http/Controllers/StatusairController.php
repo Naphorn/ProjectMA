@@ -13,7 +13,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        return view('statusairs');
+        return view('showstatusair');
     }
 
     /**
@@ -82,10 +82,10 @@ class StatusairController extends Controller
         //
     }
 
-    public function statusairs1() 
+    public function showstatusair1() 
     {
         // $data = [];
-        
-        return view('statusairs1');
+
+        return view('showstatusair1', ['name' => 'test']);
     }
 }

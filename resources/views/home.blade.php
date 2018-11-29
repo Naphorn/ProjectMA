@@ -9,7 +9,6 @@
                 <div class="card-header">Level 3</div>
                 <div class="card-header">Level 4</div>
                 <div class="card-header">Level 5</div>
-                <div class="card-header" href='adduser' >Add User</div>
 
                 <!-- <div class="card-body">
                     @if (session('status'))
@@ -21,6 +20,7 @@
                     You are logged in!
                 </div> -->
             </div>
+            <a href="adduser" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">เพื่อผู้ใช้งาน</a>
         </div>
     </div>
 </div>

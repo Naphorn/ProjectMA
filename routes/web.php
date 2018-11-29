@@ -17,13 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/adduser', function () {
-//     return view('adduser');
-// });
-
-Route::resource('user','UsersController'); 
-
 Auth::routes();
+// สามารถให้ admin เพิิิ่มผู้ใช้ได้เท่านั้น
+Route::get('/adduser', function () {
+    return view('adduser');
+});
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('home', 'StatusairController');

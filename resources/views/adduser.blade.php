@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content') 
+@auth
 <div class="row"> 
     <div class="col-md-12"> 
         <br /> 
@@ -68,4 +69,5 @@
         </form>
     </div> 
 </div> 
+@endauth
 @endsection

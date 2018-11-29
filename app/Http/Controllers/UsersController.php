@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\StatusAir;
 
-class StatusairController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        // $statuseairs = StatusAir::all()->toArray();
-        return view('home');
+        //
     }
 
     /**
@@ -25,7 +23,7 @@ class StatusairController extends Controller
      */
     public function create()
     {
-        //
+        return view('adduser');
     }
 
     /**

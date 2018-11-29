@@ -17,10 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/adduser', function () {
+//     return view('adduser');
+// });
+
+Route::resource('user','UsersController'); 
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('showstatusair/1','StatusairController@showstatusair1')->name('showstatusair1');
-Route::resource('showstatusair','StatusairController');
-
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('home', 'StatusairController');

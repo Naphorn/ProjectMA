@@ -24,9 +24,8 @@
         </div>
     </div>
 </div>
-<table class="table table-bordered" id="table">
-        <thead>
-            <tr>
+    <table class="table table-bordered table-striped"> 
+        <tr> 
             <th>ห้อง</th>
             <th>อุณหภูมิคอยล์เย็น</th>
             <th>ความชื้นสัมพัทธ์</th>
@@ -38,7 +37,20 @@
             <th>ประสิทธิภาพ</th>
             <th>สถานะ</th>
             <th>ส่วนควบคุม</th>
-            </tr>
-        </thead>
-    </table>
+        </tr> 
+        @foreach($statuseairs as $row) 
+        <tr> 
+            <td>{{$row['RoomNo']}}</td> 
+            <td>{{$row['CoolTemp']}}</td> 
+            <td>{{$row['Humidity']}}</td> 
+            <td>{{$row['RoomTemp']}}</td> 
+            <td>{{$row['VoltCool']}}</td> 
+            <td>{{$row['CurrentCool']}}</td> 
+            <td>{{$row['CurrentHot']}}</td> 
+            <td>{{$row['WindSpeed']}}</td> 
+            <td>{{$row['Performance']}}</td> 
+            <td>{{$row['PowerStatus']}}</td> 
+        </tr> 
+        @endforeach 
+    </table> 
 @endsection

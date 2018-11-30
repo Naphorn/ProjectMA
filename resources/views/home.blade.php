@@ -38,7 +38,7 @@
             <th>สถานะ</th>
             <th>ส่วนควบคุม</th>
         </tr> 
-        @foreach($statuseairs as $row) 
+        @foreach($statusairs as $row) 
         <tr> 
             <td>{{$row['RoomNo']}}</td> 
             <td>{{$row['CoolTemp']}}</td> 

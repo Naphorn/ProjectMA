@@ -14,8 +14,8 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statuseairs = StatusAir::all()->toArray();
-        return view('home', compact('statuseairs'));
+        $statusairs = StatusAir::all()->toArray();
+        return view('home', compact('statusairs'));
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\StatusAir;
+use App\Level;
 
 class StatusairController extends Controller
 {
@@ -14,7 +15,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::all()->toArray();
+        $statusairs = StatusAir::with('level')->orderBy('id','asc');
         return view('home', compact('statusairs'));
     }
 

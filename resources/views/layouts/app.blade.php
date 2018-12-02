@@ -26,6 +26,30 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{'Air Management'}}
                 </a>
+                @auth
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{''}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/level1') }}">
+                    {{'Level 1'}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/level2') }}">
+                    {{'Level 2'}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/level3') }}">
+                    {{'Level 3'}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/level4') }}">
+                    {{'Level 4'}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/level5') }}">
+                    {{'Level 5'}}
+                </a>
+                <a class="navbar-brand" href="{{ url('/adduser') }}">
+                    {{'Register'}}
+                </a>
+                @endauth
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,7 +57,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -70,8 +93,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
+        </nav>               
         <main class="py-4">
             @yield('content')
         </main>

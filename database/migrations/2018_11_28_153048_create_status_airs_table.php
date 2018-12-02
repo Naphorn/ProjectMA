@@ -14,17 +14,30 @@ class CreateStatusAirsTable extends Migration
     public function up()
     {
         Schema::create('status_airs', function (Blueprint $table) {
+            // ลำดับของตาราง
             $table->increments('id');
-            $table->string('RoomNo',100);
-            $table->float('CoolTemp');
-            $table->float('Humidity');
-            $table->float('RoomTemp');
-            $table->float('VoltCool');
-            $table->float('CurrentCool');
-            $table->float('CurrentHot');
-            $table->float('WindSpeed');
-            $table->float('Performance',50);
-            $table->char('PowerStatus',50);
+            // หมายเลขชั้น
+            $table->integer('level_id');
+            // ชื่อห้อง
+            $table->string('room_no');
+            // อุณหภูมิคอยล์เย็น
+            $table->float('cool_temp');
+            // ความชื้น
+            $table->float('humidity');
+            // อุณหภูมิห้อง
+            $table->float('room_temp');
+            // แรงดันคอยล์เย็น
+            $table->float('volt_cool');
+            // กระแสคอยล์เย็น
+            $table->float('current_cool');
+            // กระแสคอยล์ร้อน
+            $table->float('current_hot');
+            // ความเร็วลม
+            $table->float('wind_speed');
+            // ค่าประสิทธิภาพ
+            $table->float('performance');
+            // สถานะของเครื่องปรับอากาศ
+            $table->char('power_status');
             $table->timestamps();
         });
     }

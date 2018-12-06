@@ -16,7 +16,7 @@
             <th>สถานะ</th>
             <th>ส่วนควบคุม</th>
         </tr> 
-        @foreach($statusairs as $row) 
+        @foreach($id as $row) 
         <tr> 
             <td>{{$row->level_id}}</td> 
             <td>{{$row->room_no}}</td> 

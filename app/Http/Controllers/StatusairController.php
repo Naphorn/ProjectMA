@@ -15,7 +15,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::with('level')->orderBy('id','asc');
+        $statusairs = StatusAir::where('id',1)->get();
         return view('home', compact('statusairs'));
     }
 
@@ -48,7 +48,9 @@ class StatusairController extends Controller
      */
     public function show($id)
     {
-        //
+        $id = StatusAir::where('level_id',$id)->get();
+        return view('level', compact('id'));
+        
     }
 
     /**

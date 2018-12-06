@@ -8,8 +8,8 @@ class Level extends Model
 {
     protected $table = 'levels';
     // protected $fillable = ['room_no'];
-    public function statusair()
-    {
-        return $this->hasMany(StatusAir::class);
-    }
+    // public function statusair()
+    // {
+    //     return $this->hasMany(StatusAir::class);
+    // }
 }

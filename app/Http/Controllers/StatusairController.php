@@ -59,7 +59,7 @@ class StatusairController extends Controller
      */
     public function edit($id)
     {
-        //
+        // 
     }
 
     /**
@@ -71,7 +71,14 @@ class StatusairController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $statusairs = StatusAir::find($id);
+        foreach($statusairs as $row) 
+        {
+            $statusairs->power_status = 'ON';
+            $statusairs->power_status = 'OFF';
+        }
+        $statusairs->save();
+        // return redirect()->route('home');
     }
 
     /**

@@ -25,6 +25,5 @@ Route::get('/adduser', function () {
 });
 
 Route::resource('level', 'LevelController');
-
-// Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'StatusairController@update')->name('home');
 Route::resource('home', 'StatusairController');

@@ -27,8 +27,8 @@
                     {{'Air Management'}}
                 </a>
                 @auth
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{''}}
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    {{'Home'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/1') }}">
                     {{'Level 1'}}

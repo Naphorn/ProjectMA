@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\StatusAir;
 use App\Level;
 
-class StatusairController extends Controller
+class LevelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::where('id',1)->get();
-        return view('home', compact('statusairs'));
+        // 
     }
 
     /**
@@ -48,7 +47,8 @@ class StatusairController extends Controller
      */
     public function show($id)
     {
-        //     
+        $id = StatusAir::where('level_id',$id)->get();
+        return view('level', compact('id'));
     }
 
     /**

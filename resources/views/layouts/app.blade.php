@@ -30,19 +30,19 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{''}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level1') }}">
+                <a class="navbar-brand" href="{{ url('/level/1') }}">
                     {{'Level 1'}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level2') }}">
+                <a class="navbar-brand" href="{{ url('/level/2') }}">
                     {{'Level 2'}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level3') }}">
+                <a class="navbar-brand" href="{{ url('/level/3') }}">
                     {{'Level 3'}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level4') }}">
+                <a class="navbar-brand" href="{{ url('/level/4') }}">
                     {{'Level 4'}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level5') }}">
+                <a class="navbar-brand" href="{{ url('/level/5') }}">
                     {{'Level 5'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/adduser') }}">

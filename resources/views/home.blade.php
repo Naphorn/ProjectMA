@@ -30,10 +30,9 @@
             <td>{{$row->performance}}</td> 
             <td>{{$row->power_status}}</td>
             <td>
-                <a href="{{action('StatusairController@update', $row['id'])}}" class="btn btn-success">ON</a>
-                <a href="{{action('StatusairController@update', $row['id'])}}" class="btn btn-danger">OFF</a>
-            </td>
-             
+                <a href="{{action('StatusairController@poweron', $row['id'])}}" class="btn btn-success">ON</a>
+                <a href="{{action('StatusairController@poweroff', $row['id'])}}" class="btn btn-danger">OFF</a>
+            </td>    
         </tr> 
         @endforeach 
     </table> 

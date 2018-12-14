@@ -48,7 +48,7 @@ class StatusairController extends Controller
      */
     public function show($id)
     {
-        //     
+        // 
     }
 
     /**
@@ -71,14 +71,7 @@ class StatusairController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $statusairs = StatusAir::find($id);
-        foreach($statusairs as $row) 
-        {
-            $statusairs->power_status = 'ON';
-            $statusairs->power_status = 'OFF';
-        }
-        $statusairs->save();
-        // return redirect()->route('home');
+        // 
     }
 
     /**
@@ -90,5 +83,21 @@ class StatusairController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function poweron($id)
+    {
+        $poweron = StatusAir::find($id);
+        $poweron->power_status = 'ON';
+        $poweron->save();
+        return redirect('home');
+    }
+
+    public function poweroff($id)
+    {
+        $poweroff = StatusAir::find($id);
+        $poweroff->power_status = 'OFF';
+        $poweroff->save();
+        return redirect('home');
     }
 }

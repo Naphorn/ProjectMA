@@ -24,6 +24,8 @@ Route::get('/adduser', function () {
     return view('adduser');
 });
 
+Route::get('/homeon/{id}', 'StatusairController@poweron');
+Route::get('/homeoff/{id}', 'StatusairController@poweroff');
+
 Route::resource('level', 'LevelController');
-// Route::get('/home', 'StatusairController@update')->name('home');
 Route::resource('home', 'StatusairController');

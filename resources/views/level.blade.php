@@ -30,9 +30,8 @@
             <td>{{$row->performance}}</td> 
             <td>{{$row->power_status}}</td>
             <td>
-                <a href="#" class="btn btn-success">On</a> 
-                <a href="#" class="btn btn-danger">Off</a> 
-                <a href="#" class="btn btn-primary">Control</a>
+                <a href="{{action('LevelController@poweron', $row['id'])}}" class="btn btn-success">ON</a>
+                <a href="{{action('LevelController@poweroff', $row['id'])}}" class="btn btn-danger">OFF</a>
             </td>  
         </tr> 
         @endforeach 

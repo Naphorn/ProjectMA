@@ -90,7 +90,7 @@ class StatusairController extends Controller
         $poweron = StatusAir::find($id);
         $poweron->power_status = 'ON';
         $poweron->save();
-        return redirect('home');
+        return back()->withInput();
     }
 
     public function poweroff($id)
@@ -98,6 +98,6 @@ class StatusairController extends Controller
         $poweroff = StatusAir::find($id);
         $poweroff->power_status = 'OFF';
         $poweroff->save();
-        return redirect('home');
+        return back()->withInput();
     }
 }

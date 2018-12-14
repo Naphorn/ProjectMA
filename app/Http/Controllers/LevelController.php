@@ -84,4 +84,20 @@ class LevelController extends Controller
     {
         //
     }
+
+    public function poweron($id)
+    {
+        $poweron = StatusAir::find($id);
+        $poweron->power_status = 'ON';
+        $poweron->save();
+        return back()->withInput();
+    }
+
+    public function poweroff($id)
+    {
+        $poweroff = StatusAir::find($id);
+        $poweroff->power_status = 'OFF';
+        $poweroff->save();
+        return back()->withInput();
+    }
 }

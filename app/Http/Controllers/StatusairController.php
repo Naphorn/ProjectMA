@@ -85,6 +85,7 @@ class StatusairController extends Controller
         //
     }
 
+    // ควบคุม switch ON ของเครื่องปรับอากาศ
     public function poweron($id)
     {
         $poweron = StatusAir::find($id);
@@ -93,11 +94,56 @@ class StatusairController extends Controller
         return back()->withInput();
     }
 
+    // ควบคุม switch OFF ของเครื่องปรับอากาศ
     public function poweroff($id)
     {
         $poweroff = StatusAir::find($id);
         $poweroff->power_status = 'OFF';
         $poweroff->save();
         return back()->withInput();
+    }
+
+    // คำนวณหาค่า Performance ของเครื่องปรับอากาศ
+    public function performanceairs($id)
+    {
+        $statusairs = StatusAir::find($id);
+        $volt = StatusAir::where('volt_cool', '<', 300)->pluck('volt_cool')->first();
+        $cc=StatusAir::where('current_cool', '<', '10')->pluck('current_cool')->first();
+        $ch=StatusAir::where('current_hot', '<', '10')->pluck('current_hot')->first();
+        
+        $p1=($volt*$cc);
+        $p2=($volt*$ch);
+        $p=($p1+$p2);
+
+        $btu=18000;
+
+        $eer=($btu/$p);
+
+        if($eer>=11.60)
+        {
+            $eers=5;
+        }
+        else if($eer>=11.00 && $eer<=11.59)
+        {
+            $eers=4;
+        }
+        else if($eer>=10.60 && $eer<=10.99)
+        {
+            $eers=3;
+        }
+        else if($eer>=10.00 && $eer<=10.59)
+        {
+            $eers=2;
+        }
+        else if($eer<=9.99)
+        {
+            $eers=1;
+        }
+        
+        $statusairs->performance = $eers;
+        $statusairs->save();
+        // echo $statusairs;
+        return back()->withInput();
+        // return view('home');
     }
 }

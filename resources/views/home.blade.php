@@ -27,7 +27,10 @@
             <td>{{$row->current_cool}}</td> 
             <td>{{$row->current_hot}}</td> 
             <td>{{$row->wind_speed}}</td> 
-            <td>{{$row->performance}}</td> 
+            <td>
+                {{$row->performance}}
+                <a href="{{action('StatusairController@performanceairs', $row['id'])}}" class="btn btn-success">Refresh</a>
+            </td> 
             <td>{{$row->power_status}}</td>
             <td>
                 <a href="{{action('StatusairController@poweron', $row['id'])}}" class="btn btn-success">ON</a>

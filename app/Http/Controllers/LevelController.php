@@ -85,6 +85,7 @@ class LevelController extends Controller
         //
     }
 
+    // ควบคุม switch ON ของเครื่องปรับอากาศ
     public function poweron($id)
     {
         $poweron = StatusAir::find($id);
@@ -93,6 +94,7 @@ class LevelController extends Controller
         return back()->withInput();
     }
 
+    // ควบคุม switch OFF ของเครื่องปรับอากาศ
     public function poweroff($id)
     {
         $poweroff = StatusAir::find($id);

@@ -32,6 +32,13 @@
             <td>
                 <a href="{{action('LevelController@poweron', $row['id'])}}" class="btn btn-success">ON</a>
                 <a href="{{action('LevelController@poweroff', $row['id'])}}" class="btn btn-danger">OFF</a>
+                <?php echo date('Y-m-d : H:i:s'); ?>
+                <?php echo date('H'); 
+                $Time = date('H');
+                echo $Time;
+                
+                
+                ?>
             </td>  
         </tr> 
         @endforeach 

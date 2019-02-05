@@ -101,7 +101,6 @@ header a, a:visited {
   animation:move-twink-back 200s linear infinite;
 }
 
-
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -152,8 +151,6 @@ header a, a:visited {
             .m-b-md {
                 margin-bottom: 30px;
             }
-
-
         </style>
     </head>
     <body>
@@ -173,12 +170,6 @@ header a, a:visited {
                     @endauth
                 </div>
             @endif
-
-
-
-
-
-
 
             <div class="content">
                 <div class="title m-b-md">

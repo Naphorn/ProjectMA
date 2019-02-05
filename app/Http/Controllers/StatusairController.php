@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\StatusAir;
 use App\Level;
+use App\Building;
 
 class StatusairController extends Controller
 {
@@ -48,7 +49,7 @@ class StatusairController extends Controller
      */
     public function show($id)
     {
-        // 
+        //
     }
 
     /**
@@ -59,7 +60,7 @@ class StatusairController extends Controller
      */
     public function edit($id)
     {
-        // 
+        //
     }
 
     /**
@@ -71,7 +72,7 @@ class StatusairController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // 
+        //
     }
 
     /**
@@ -110,7 +111,7 @@ class StatusairController extends Controller
         $volt = StatusAir::where('volt_cool', '<', 300)->pluck('volt_cool')->first();
         $cc=StatusAir::where('current_cool', '<', '10')->pluck('current_cool')->first();
         $ch=StatusAir::where('current_hot', '<', '10')->pluck('current_hot')->first();
-        
+
         $p1=($volt*$cc);
         $p2=($volt*$ch);
         $p=($p1+$p2);
@@ -139,7 +140,7 @@ class StatusairController extends Controller
         {
             $eers=1;
         }
-        
+
         $statusairs->performance = $eers;
         $statusairs->save();
         // echo $statusairs;

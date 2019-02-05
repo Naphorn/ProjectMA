@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\StatusAir;
+use App\Level;
+use App\Building;
 
 class BuildingController extends Controller
 {
@@ -13,7 +16,7 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        return view('building');
+        //
     }
 
     /**
@@ -23,7 +26,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        //
+        return view('building');
     }
 
     /**
@@ -34,7 +37,14 @@ class BuildingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [ 'floor' => 'required', 'num_room' => 'required' ]);
+        $build = new Building
+        ([
+            'floor' => $request->get('floor'),
+            'num_room' => $request->get('num_room')
+        ]);
+        $build->save();
+        return redirect()->route('home')->with('success','บันทึกข้อมูลเรียบร้อย');
     }
 
     /**

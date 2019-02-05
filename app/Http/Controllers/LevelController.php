@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\StatusAir;
 use App\Level;
+use App\Building;
 
 class LevelController extends Controller
 {
@@ -15,7 +16,7 @@ class LevelController extends Controller
      */
     public function index()
     {
-        // 
+        //
     }
 
     /**

@@ -28,28 +28,28 @@
                 </a>
                 @auth
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    {{'Home'}}
+                    {{'หน้าหลัก'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/1') }}">
-                    {{'Level 1'}}
+                    {{'ชั้น 1'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/2') }}">
-                    {{'Level 2'}}
+                    {{'ชั้น 2'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/3') }}">
-                    {{'Level 3'}}
+                    {{'ชั้น 3'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/4') }}">
-                    {{'Level 4'}}
+                    {{'ชั้น 4'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/5') }}">
-                    {{'Level 5'}}
+                    {{'ชั้น 5'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/adduser') }}">
-                    {{'Register'}}
+                    {{'เพิ่มผู้ใช้งาน'}}
                 </a>
                 @endauth
-                
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -96,40 +96,40 @@
                         <?=date("H:i:s")?>
                         </div>
                         <br />
-                            
-                            
+
+
                         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
                         <script type="text/javascript">
                         $(function(){
-                            
-                            
+
+
                             var nowDateTime=new Date("<?=date("m/d/Y H:i:s")?>");
                             var d=nowDateTime.getTime();
                             var mkHour,mkMinute,mkSecond;
                                 setInterval(function(){
                                 d=parseInt(d)+1000;
                                 var nowDateTime=new Date(d);
-                                mkHour=new String(nowDateTime.getHours());  
-                                if(mkHour.length==1){  
-                                    mkHour="0"+mkHour;  
+                                mkHour=new String(nowDateTime.getHours());
+                                if(mkHour.length==1){
+                                    mkHour="0"+mkHour;
                                 }
-                                mkMinute=new String(nowDateTime.getMinutes());  
-                                if(mkMinute.length==1){  
-                                    mkMinute="0"+mkMinute;  
-                                }        
-                                mkSecond=new String(nowDateTime.getSeconds());  
-                                if(mkSecond.length==1){  
-                                    mkSecond="0"+mkSecond;  
-                                }   
-                                var runDateTime=mkHour+":"+mkMinute+":"+mkSecond;        
-                                $("#css_time_run").html(runDateTime);    
+                                mkMinute=new String(nowDateTime.getMinutes());
+                                if(mkMinute.length==1){
+                                    mkMinute="0"+mkMinute;
+                                }
+                                mkSecond=new String(nowDateTime.getSeconds());
+                                if(mkSecond.length==1){
+                                    mkSecond="0"+mkSecond;
+                                }
+                                var runDateTime=mkHour+":"+mkMinute+":"+mkSecond;
+                                $("#css_time_run").html(runDateTime);
                                 },1000);
-                            
-                            
+
+
                         });
                         </script>
             </div>
-        </nav>               
+        </nav>
         <main class="py-4">
             @yield('content')
         </main>

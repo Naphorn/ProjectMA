@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @auth
-    <table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped">
         <tr>
             <th>ชั้น</th>
             <th>ห้อง</th>
@@ -16,7 +16,7 @@
             <th>สถานะ</th>
             <th>ส่วนควบคุม</th>
         </tr>
-        @foreach($id as $row)
+        @foreach($statusairs as $row)
         <tr>
             <td>{{$row->level_id}}</td>
             <td>{{$row->room_no}}</td>

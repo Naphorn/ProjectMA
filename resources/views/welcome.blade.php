@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        
+
         <!-- Styles -->
         <style>
             * {
@@ -92,7 +92,7 @@ header a, a:visited {
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  
+
 
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;
@@ -163,9 +163,9 @@ header a, a:visited {
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">หน้าหลัก</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">ลงชื่อเข้าใช้</a>
 
                         <!-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
@@ -175,7 +175,7 @@ header a, a:visited {
             @endif
 
 
-            
+
 
 
 
@@ -183,6 +183,9 @@ header a, a:visited {
             <div class="content">
                 <div class="title m-b-md">
                     Air Management
+                </div>
+                <div class="title m-b-md">
+                    ระบบริหารจัดการเครื่องปรับอากาศ
                 </div>
             </div>
         </div>

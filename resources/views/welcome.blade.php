@@ -173,7 +173,7 @@ header a, a:visited {
 
             <div class="content">
                 <div class="title m-b-md">
-                    Air Management
+                    Airr Management
                 </div>
                 <div class="title m-b-md">
                     ระบบริหารจัดการเครื่องปรับอากาศ

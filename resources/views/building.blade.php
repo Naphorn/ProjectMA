@@ -9,12 +9,10 @@
             <br/>
             <form method="post" action="{{url('building')}}"> {{csrf_field()}}
                 <div class="form-group">
-                    <input type="text" name="floor" class="form-control" placeholder="ป้อนจำนวนชั้น"/>
-                </div>
-                <div class="form-group">
+                    <input type="text" name="floor" class="form-control" placeholder="ป้อนชั้น"/>
                     <input type="text" name="num_room" class="form-control" placeholder="ป้อนจำนวนห้อง"/>
                 </div>
-                <button class="add-box">+</button>
+                {{-- <button class="add-box">+</button> --}}
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="บันทึกข้อมูล"/>
                 </div>

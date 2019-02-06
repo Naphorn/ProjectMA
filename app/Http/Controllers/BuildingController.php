@@ -16,7 +16,8 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        //
+        $builds = Building::all()->toArray();
+        return view('home', compact('builds'));
     }
 
     /**
@@ -44,7 +45,7 @@ class BuildingController extends Controller
             'num_room' => $request->get('num_room')
         ]);
         $build->save();
-        return redirect()->route('home')->with('success','บันทึกข้อมูลเรียบร้อย');
+        return view('home');
     }
 
     /**

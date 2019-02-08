@@ -1,16 +1,18 @@
+@extends('layouts.sidebar')
 @extends('layouts.app')
 @section('content')
 @auth
 <div class="container">
-    <a href="building/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">เพิ่มข้อมูลอาคาร</a>
+        <canvas height="200" id="myCanvas" width="578"></canvas>
+        <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
 
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>ชั้น</th>
-            <th>จำนวนห้อง</th>
-        </tr>
-
-    </table>
+        context.beginPath();
+        context.moveTo(100, 150); // เริ่มต้น cursor (ตำแหน่งเริ่มต้นของ context)
+        context.lineTo(450, 50); // ตำแหน่งปลายทาง
+        context.stroke();
+        </script>
 
 </div>
 @endauth

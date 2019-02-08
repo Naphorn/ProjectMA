@@ -24,11 +24,9 @@ Route::get('/adduser', function () {
     return view('adduser');
 });
 
-// Route::get('/building', function () {
-//     return view('building');
-// });
-
-Route::resource('building', 'BuildingController');
+Route::get('/sidebar', function () {
+    return view('layouts.sidebar');
+});
 
 Route::get('/levelon/{id}', 'LevelController@poweron');
 Route::get('/leveloff/{id}', 'LevelController@poweroff');

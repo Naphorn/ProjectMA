@@ -24,8 +24,8 @@ Route::get('/adduser', function () {
     return view('adduser');
 });
 
-// Route::get('/building', function () {
-//     return view('building');
+// Route::get('/view', function () {
+//     return view('view');
 // });
 
 Route::resource('building', 'BuildingController');
@@ -37,6 +37,7 @@ Route::get('/homeon/{id}', 'StatusairController@poweron');
 Route::get('/homeoff/{id}', 'StatusairController@poweroff');
 
 Route::get('/performanceairs/{id}', 'StatusairController@performanceairs');
+
 
 Route::resource('level', 'LevelController');
 Route::resource('home', 'StatusairController');

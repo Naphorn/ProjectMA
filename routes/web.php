@@ -28,6 +28,10 @@ Route::get('/sidebar', function () {
     return view('layouts.sidebar');
 });
 
+Route::get('/testtext', function () {
+    return view('testtext');
+});
+
 Route::get('/levelon/{id}', 'LevelController@poweron');
 Route::get('/leveloff/{id}', 'LevelController@poweroff');
 

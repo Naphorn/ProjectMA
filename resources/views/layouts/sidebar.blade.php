@@ -66,5 +66,29 @@
     </div>
     {{-- -------------------------------------------- --}}
 
+    <canvas id="myCanvas1"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas1');
+        var context = canvas.getContext('2d');
+        context.beginPath();
+        context.strokeStyle = "#3984dd";
+        context.lineWidth = 2;
+        context.moveTo(50, 50);
+        context.lineTo(50, 100);
+        context.stroke();
+    </script>
+
+<canvas id="myCanvas2"></canvas>
+   <script>
+// ----- บน --------------------
+var canvas = document.getElementById('myCanvas2');
+        var context = canvas.getContext('2d');
+context.beginPath();
+context.strokeStyle = "#FFFF00";
+context.lineWidth = 2;
+context.moveTo(100, 50);
+context.lineTo(50, 50);
+context.stroke();
+</script>
 </body>
 </html>

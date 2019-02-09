@@ -1,19 +1,45 @@
-@extends('layouts.sidebar')
 @extends('layouts.app')
 @section('content')
 @auth
-<div class="container">
-        <canvas height="200" id="myCanvas" width="578"></canvas>
-        <script>
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext('2d');
 
-        context.beginPath();
-        context.moveTo(100, 150); // เริ่มต้น cursor (ตำแหน่งเริ่มต้นของ context)
-        context.lineTo(450, 50); // ตำแหน่งปลายทาง
-        context.stroke();
-        </script>
+<style>
+    #one {
+        border: solid;
+        color: #000000;
+        padding: 15px;
+        width: 100px;
+        height: 200px;
+    }
+    #two {
 
-</div>
+    }
+</style>
+
+<script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    context.beginPath();
+    context.strokeStyle = "#3984dd";
+    context.lineWidth = 10;
+    context.moveTo(50, 50);
+    context.lineTo(50, 200);
+    context.stroke();
+
+    context.beginPath();
+    context.strokeStyle = "#dd0343";
+    context.lineWidth = 10;
+    context.lineCap = 'round'
+    context.moveTo(100, 50);
+    context.lineTo(100, 200);
+    context.stroke();
+
+</script>
+
+
+
+        <canvas id="canvas" width="150" height="150"></canvas>
+
+
 @endauth
 @endsection

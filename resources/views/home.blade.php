@@ -14,13 +14,16 @@
         </tr>
 
     </table>
-    <p class="one">Some text.</p>
-<p class="two">Some text.</p>
-<p class="three">Some text.</p>
-<p class="four">Some text.</p>
-<p class="five">Some text.</p>
-<p class="six">Some text.</p>
-<p class="seven">Some text.</p>
+    <canvas id="myCanvas" width="600" height="300" style="border:5px solid;" position="absolute"></canvas>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        ctx.closePath();
+    </script>
 
 </div>
 @endauth

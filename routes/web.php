@@ -24,9 +24,9 @@ Route::get('/adduser', function () {
     return view('adduser');
 });
 
-// Route::get('/view', function () {
-//     return view('view');
-// });
+Route::get('/view', function () {
+    return view('view');
+});
 
 Route::resource('building', 'BuildingController');
 

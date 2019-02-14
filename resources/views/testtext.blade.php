@@ -11,239 +11,146 @@
             padding: 0px;
             font-family: sans-serif;
         }
-/* ------------------------------------------------------------------ */
-        #line1{
+    /* ------------------------------------------------------------------ */
+        .line0 {
             border-left: solid 0px #00ccff;
             border-top: solid 0px #00ccff;
             border-bottom: solid 0px #00ccff;
             border-right: solid 0px #00ccff;
         }
-        #line2{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line3{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line4{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line5{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line6{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line7{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line8{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line9{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line10{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line11{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line12{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line13{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line14{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line15{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-        #line16{
-            border-left: solid 0px #00ccff;
-            border-top: solid 0px #00ccff;
-            border-bottom: solid 0px #00ccff;
-            border-right: solid 0px #00ccff;
-        }
-/* ------------------------------------------------------------------ */
-        #line1.active{
+    /* ------------------------------------------------------------------ */
+        .line1 {
             border-left: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line2.active{
+        .line2 {
             border-top: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line3.active{
+        .line3 {
             border-left: solid 5px #00ccff;
             border-top: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line4.active{
+        .line4 {
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line5.active{
+        .line5 {
             border-left: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line6.active{
+        .line6 {
             border-top: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line7.active{
+        .line7 {
             border-left: solid 5px #00ccff;
             border-top: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line8.active{
+        .line8 {
             border-bottom: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line9.active{
+        .line9 {
             border-left: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line10.active{
+        .line10 {
             border-top: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line11.active{
+        .line11 {
             border-left: solid 5px #00ccff;
             border-top: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line12.active{
+        .line12 {
             border-bottom: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line13.active{
+        .line13 {
             border-left: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line14.active{
+        .line14 {
             border-top: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-        #line15.active{
+        .line15 {
             border-left: solid 5px #00ccff;
             border-top: solid 5px #00ccff;
             border-bottom: solid 5px #00ccff;
             border-right: solid 5px #00ccff;
+            height: 100px;
+            width: 100px;
         }
-/* ------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------ */
     </style>
 
 </head>
 <body>
 
-    <script>
-        function toggleLine1() {
-            var a = 0;
-            var b = 0;
-            var c = 0;
-            var d = 0;
 
-            if ()
-            document.getElementById("line1").classList.toggle('active');
+    <button onclick="mySw1()">1</button>
+    <button onclick="mySw2()">2</button>
+    <button onclick="mySw3()">4</button>
+    <button onclick="mySw4()">8</button>
+
+    <div id="myDIV"></div>
+
+    <script>
+        var a = 0;
+        var b = 0;
+        var c = 0;
+        var d = 0;
+
+        function mySw1() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("line1");
         }
-        function toggleLine2() {
-            document.getElementById("line2").classList.toggle('active');
+        function mySw2() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("line2");
         }
-        function toggleLine3() {
-            document.getElementById("line3").classList.toggle('active');
+        function mySw3() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("line4");
         }
-        function toggleLine4() {
-            document.getElementById("line4").classList.toggle('active');
+        function mySw4() {
+            var element = document.getElementById("myDIV");
+            element.classList.toggle("line8");
         }
-        // function toggleLine5() {
-        //     document.getElementById("line4").classList.toggle('active');
-        // }
-        // function toggleLine6() {
-        //     document.getElementById("line5").classList.toggle('active');
-        // }
-        // function toggleLine7() {
-        //     document.getElementById("line6").classList.toggle('active');
-        // }
-        // function toggleLine8() {
-        //     document.getElementById("line7").classList.toggle('active');
-        // }
-        // function toggleLine9() {
-        //     document.getElementById("line8").classList.toggle('active');
-        // }
-        // function toggleLine10() {
-        //     document.getElementById("line9").classList.toggle('active');
-        // }
-        // function toggleLine11() {
-        //     document.getElementById("line10").classList.toggle('active');
-        // }
-        // function toggleLine12() {
-        //     document.getElementById("line11").classList.toggle('active');
-        // }
-        // function toggleLine13() {
-        //     document.getElementById("line12").classList.toggle('active');
-        // }
-        // function toggleLine14() {
-        //     document.getElementById("line13").classList.toggle('active');
-        // }
-        // function toggleLine15() {
-        //     document.getElementById("line14").classList.toggle('active');
-        // }
+
     </script>
 
-    <table width=25% border="5" cellpadding="50" cellspacing="0">
 
-        <th id="line1"></th>
-        <th id="line2"></th>
-        <th id="line3"></th>
-        <th id="line4"></th>
-
-    </table>
-
-    <button type="button" class="toggle-btn" onclick="toggleLine1()">1</button>
-    <button type="button" class="toggle-btn" onclick="toggleLine2()">2</button>
-    <button type="button" class="toggle-btn" onclick="toggleLine3()">4</button>
-    <button type="button" class="toggle-btn" onclick="toggleLine4()">8</button>
 
 </body>
 </html>

@@ -1,43 +1,89 @@
 @extends('layouts.app')
 @section('content')
 @auth
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>ชั้น</th>
-            <th>ห้อง</th>
-            <th>อุณหภูมิคอยล์เย็น</th>
-            <th>ความชื้นสัมพัทธ์</th>
-            <th>อุณหภูมิห้อง</th>
-            <th>แรงดันคอยล์เย็น</th>
-            <th>กระแสคอยล์เย็น</th>
-            <th>กระแสคอยล์ร้อน</th>
-            <th>ความเร็วลม</th>
-            <th>ประสิทธิภาพ</th>
-            <th>สถานะ</th>
-            <th>ส่วนควบคุม</th>
-        </tr>
-        @foreach($id as $row)
-        <tr>
-            <td>{{$row->level_id}}</td>
-            <td>{{$row->room_no}}</td>
-            <td>{{$row->cool_temp}}</td>
-            <td>{{$row->humidity}}</td>
-            <td>{{$row->room_temp}}</td>
-            <td>{{$row->volt_cool}}</td>
-            <td>{{$row->current_cool}}</td>
-            <td>{{$row->current_hot}}</td>
-            <td>{{$row->wind_speed}}</td>
-            <td>
-                {{$row->performance}}
-                <a href="{{action('StatusairController@performanceairs', $row['id'])}}" class="btn btn-success">Refresh</a>
-            </td>
-            <td>{{$row->power_status}}</td>
-            <td>
-                <a href="{{action('StatusairController@poweron', $row['id'])}}" class="btn btn-success">ON</a>
-                <a href="{{action('StatusairController@poweroff', $row['id'])}}" class="btn btn-danger">OFF</a>
-            </td>
-        </tr>
-        @endforeach
-    </table>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">สถานะ</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">สถานะ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        {{-- ------------------------------------------------------------------ --}}
+        {{-- ------------------------------------------------------------------ --}}
+        <table class="table table-bordered table-striped">
+            @foreach($id as $row)
+            <tr>
+                <th>ชั้น</th>
+                <td>{{$row->level_id}}</td>
+            </tr>
+            <tr>
+                <th>ห้อง</th>
+                <td>{{$row->room_no}}</td>
+            </tr>
+            <tr>
+                <th>อุณหภูมิคอยล์เย็น</th>
+                <td>{{$row->cool_temp}}</td>
+            </tr>
+            <tr>
+                <th>ความชื้นสัมพัทธ์</th>
+                <td>{{$row->humidity}}</td>
+            </tr>
+            <tr>
+                <th>อุณหภูมิห้อง</th>
+                <td>{{$row->room_temp}}</td>
+            </tr>
+            <tr>
+                <th>แรงดันคอยล์เย็น</th>
+                <td>{{$row->volt_cool}}</td>
+            </tr>
+            <tr>
+                <th>กระแสคอยล์เย็น</th>
+                <td>{{$row->current_cool}}</td>
+            </tr>
+            <tr>
+                <th>กระแสคอยล์ร้อน</th>
+                <td>{{$row->current_hot}}</td>
+            </tr>
+            <tr>
+                <th>ความเร็วลม</th>
+                <td>{{$row->wind_speed}}</td>
+            </tr>
+            <tr>
+                <th>ประสิทธิภาพ</th>
+                <td>
+                    {{$row->performance}}
+                    <a href="{{action('StatusairController@performanceairs', $row['id'])}}" class="btn btn-success">Refresh</a>
+                </td>
+            </tr>
+            <tr>
+                <th>สถานะ</th>
+                <td>{{$row->power_status}}</td>
+            </tr>
+            <tr>
+                <th>ส่วนควบคุม</th>
+                <td>
+                    <a href="{{action('StatusairController@poweron', $row['id'])}}" class="btn btn-success">ON</a>
+                    <a href="{{action('StatusairController@poweroff', $row['id'])}}" class="btn btn-danger">OFF</a>
+                </td>
+            </tr>
+            @endforeach
+        </table>
+        {{-- ------------------------------------------------------------------ --}}
+        {{-- ------------------------------------------------------------------ --}}
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+    </div>
+    </div>
+</div>
+</div>
 @endauth
 @endsection

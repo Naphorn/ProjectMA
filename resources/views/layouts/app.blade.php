@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{'Air Management'}}</title>
+    <title>{{'Airr Management'}}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -30,7 +30,7 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{'หน้าหลัก'}}
                 </a>
-                {{-- <a class="navbar-brand" href="{{ url('/level/1') }}">
+                <a class="navbar-brand" href="{{ url('/level/1') }}">
                     {{'ชั้น 1'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/2') }}">
@@ -44,7 +44,7 @@
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/5') }}">
                     {{'ชั้น 5'}}
-                </a> --}}
+                </a>
                 <a class="navbar-brand" href="{{ url('/adduser') }}">
                     {{'เพิ่มผู้ใช้งาน'}}
                 </a>

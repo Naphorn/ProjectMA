@@ -31,6 +31,9 @@ Route::get('/sidebar', function () {
 Route::get('/testtext', function () {
     return view('testtext');
 });
+Route::get('/testcsv', function () {
+    return view('testcsv');
+});
 
 Route::get('/levelon/{id}', 'LevelController@poweron');
 Route::get('/leveloff/{id}', 'LevelController@poweroff');

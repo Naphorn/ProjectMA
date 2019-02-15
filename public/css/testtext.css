@@ -1,0 +1,77 @@
+
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+/* ------------------------------------------------------------------ */
+        #line0{
+            border-left: solid 0px #00ccff;
+            border-top: solid 0px #00ccff;
+            border-bottom: solid 0px #00ccff;
+            border-right: solid 0px #00ccff;
+        }
+
+        #line1{
+            border-left: solid 5px #00ccff;
+        }
+        #line2{
+            border-top: solid 5px #00ccff;
+        }
+        #line3{
+            border-left: solid 5px #00ccff;
+            border-top: solid 5px #00ccff;
+        }
+        #line4{
+            border-right: solid 5px #00ccff;
+        }
+        #line5{
+            border-left: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line6{
+            border-top: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line7{
+            border-left: solid 5px #00ccff;
+            border-top: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line8{
+            border-bottom: solid 5px #00ccff;
+        }
+        #line9{
+            border-left: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+        }
+        #line10{
+            border-top: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+        }
+        #line11{
+            border-left: solid 5px #00ccff;
+            border-top: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+        }
+        #line12{
+            border-bottom: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line13{
+            border-left: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line14{
+            border-top: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+        #line15{
+            border-left: solid 5px #00ccff;
+            border-top: solid 5px #00ccff;
+            border-bottom: solid 5px #00ccff;
+            border-right: solid 5px #00ccff;
+        }
+/* ------------------------------------------------------------------ */

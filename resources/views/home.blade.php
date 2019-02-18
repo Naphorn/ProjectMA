@@ -1,6 +1,6 @@
 {{-- @extends('layouts.sidebar') --}}
 @extends('layouts.app')
-@section('content')
+{{-- @section('content') --}}
 @auth
 
 <div class="container">
@@ -272,4 +272,4 @@
 
 
 @endauth
-@endsection
+{{-- @endsection --}}

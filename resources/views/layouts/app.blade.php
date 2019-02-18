@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
 </head>
 <body>
     <div id="app">
@@ -30,7 +31,7 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{'หน้าหลัก'}}
                 </a>
-                <a class="navbar-brand" href="{{ url('/level/1') }}">
+                {{-- <a class="navbar-brand" href="{{ url('/level/1') }}">
                     {{'ชั้น 1'}}
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/2') }}">
@@ -44,7 +45,7 @@
                 </a>
                 <a class="navbar-brand" href="{{ url('/level/5') }}">
                     {{'ชั้น 5'}}
-                </a>
+                </a> --}}
                 <a class="navbar-brand" href="{{ url('/adduser') }}">
                     {{'เพิ่มผู้ใช้งาน'}}
                 </a>

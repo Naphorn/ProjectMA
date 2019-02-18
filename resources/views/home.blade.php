@@ -1,6 +1,6 @@
-{{-- @extends('layouts.sidebar') --}}
+@extends('layouts.sidebar')
 @extends('layouts.app')
-<<<<<<< HEAD
+
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/home.css')}}">
 @endsection
@@ -279,4 +279,4 @@
 
 
 @endauth
-{{-- @endsection --}}
+@endsection

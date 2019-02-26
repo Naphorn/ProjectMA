@@ -32,6 +32,10 @@ Route::get('/testtext', function () {
     return view('testtext');
 });
 
+Route::get('/importcsv', function () {
+    return view('importcsv');
+});
+
 Route::get('/levelon/{id}', 'LevelController@poweron');
 Route::get('/leveloff/{id}', 'LevelController@poweroff');
 

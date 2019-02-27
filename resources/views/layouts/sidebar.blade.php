@@ -54,26 +54,24 @@
     {{-- sidebar-------------------------------------- --}}
     <div id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">
-            <br>
-            <br>
+            <br><br>
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <ul>
-            <br>
-            <br>
-            <br>
-            <a class="navbar-brand" href="{{ url('/home') }}">
-                {{'หน้าหลัก'}}
-            </a>
-            <a class="navbar-brand" href="{{ url('/home') }}">
-                {{'หน้าหลัก'}}
-            </a>
-            <a class="navbar-brand" href="{{ url('/home') }}">
-                {{'หน้าหลัก'}}
-            </a>
-        </ul>
+            <br><br>
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/home') }}">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/level/1') }}">ชั้น 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/level/2') }}">ชั้น 2</a>
+                </li>
+            </ul>
     </div>
     {{-- -------------------------------------------- --}}
 

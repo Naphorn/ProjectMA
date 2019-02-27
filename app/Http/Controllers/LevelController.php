@@ -48,7 +48,7 @@ class LevelController extends Controller
      */
     public function show($id)
     {
-        $id = StatusAir::where('level_id',$id)->get();
+        $id = StatusAir::where('id',$id)->get();
         return view('level', compact('id'));
     }
 

@@ -54,14 +54,25 @@
     {{-- sidebar-------------------------------------- --}}
     <div id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">
+            <br>
+            <br>
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
+            <br>
+            <br>
+            <br>
+            <a class="navbar-brand" href="{{ url('/home') }}">
+                {{'หน้าหลัก'}}
+            </a>
+            <a class="navbar-brand" href="{{ url('/home') }}">
+                {{'หน้าหลัก'}}
+            </a>
+            <a class="navbar-brand" href="{{ url('/home') }}">
+                {{'หน้าหลัก'}}
+            </a>
         </ul>
     </div>
     {{-- -------------------------------------------- --}}

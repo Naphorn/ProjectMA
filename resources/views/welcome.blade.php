@@ -14,8 +14,9 @@
 
     </head>
     <body>
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+
+        {{-- <div class="stars"></div>
+        <div class="twinkling"></div> --}}
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -37,6 +38,14 @@
                 </div>
                 <div class="title m-b-md">
                     ระบบริหารจัดการเครื่องปรับอากาศ
+                </div>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100">
+                    </div>
                 </div>
             </div>
         </div>

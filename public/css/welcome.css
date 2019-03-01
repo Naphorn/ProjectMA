@@ -1,140 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color:rgba(33, 33, 33, 0.9);
-    color:#ffffff;
-    display:block;
-    font: 14px/1.3 Arial,sans-serif;
-    height:50px;
-    position:relative;
-    z-index:5;
-}
-h2{
-    margin-top: 30px;
-    text-align: center;
-}
-header h2{
-    font-size: 22px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-}
-header a, a:visited {
-    text-decoration:none;
-    color:#fcfcfc;
-}
-
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
-}
-
-.stars, .twinkling {
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-width:100%;
-height:100%;
-display:block;
-}
-
-.stars {
-background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-z-index:0;
-}
-
-.twinkling{
-background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-
-
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
-}
-
-html, body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    height: 100vh;
-    margin: 0;
-}
-
-.full-height {
-    height: 100vh;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
-.content {
-    text-align: center;
-}
-
-.title {
-    font-size: 84px;
-}
-
-.links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.m-b-md {
-    margin-bottom: 30px;
-}
+body{
+    background:url("http://orig12.deviantart.net/a72c/f/2014/120/8/c/abstract_geometric_low_poly___wallpaper_by_mcfrolic-d7gjq9d.jpg");  
+      background-position: 0px 0px;
+      background-repeat:no-repeat;
+       overflow: hidden;
+    }
+    
+    .centerImg{
+      height:100%;
+     background:url("https://m2.behance.net/rendition/pm/17815857/disp/bc25da2a3eb9b7efcf74e3153d40ef04.png") no-repeat fixed center center;
+     opacity:1;
+      animation: lowPoly 6.3s ease-in infinite;
+      
+    }
+    
+    @keyframes lowPoly {
+      25% {opacity:0.25;}
+      50% {opacity:0.50;}
+      75% {opacity:0.75;}
+      100% {opacity:1;}
+    }
+    
+    
+    .container{
+        height:800px;
+    }
+    
+    #typewriter{
+      font-size:50px;
+      color:white;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing:1.5px;
+    
+      position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-490%);
+      
+    }
+    #typewriter1{
+      font-size:50px;
+      color:white;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing:1.5px;
+    
+      position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-490%);
+      
+    }
+    
+    button{
+      position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-1290%);
+    }

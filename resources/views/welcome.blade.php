@@ -12,11 +12,12 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/welcome.css')}}">
 
+        <!-- Scripts -->
+        <script src="{{ asset('js/welcome.js') }}" defer></script>
+
     </head>
     <body>
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="flex-center position-ref full-height">
+        
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -31,14 +32,14 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Airr Management
-                </div>
-                <div class="title m-b-md">
-                    ระบบริหารจัดการเครื่องปรับอากาศ
-                </div>
+            
+            <div class="container">
+            <div class="centerImg"></div>
+            <div id="typewriter"></div>
+            <div id="typewriter1"></div>
             </div>
-        </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            Log In
+            </button>
     </body>
 </html>

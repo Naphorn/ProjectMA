@@ -10,36 +10,47 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/welcome.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/welcome1.css')}}">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/welcome.js') }}" defer></script>
+        <script src="{{ asset('js/welcome1.js') }}" defer></script>
 
     </head>
-    <body>
-        
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">หน้าหลัก</a>
-                    @else
-                        <a href="{{ route('login') }}">ลงชื่อเข้าใช้</a>
-
-                        <!-- @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif -->
-                    @endauth
-                </div>
-            @endif
-
-            
+    <body>         
             <div class="container">
             <div class="centerImg"></div>
             <div id="typewriter"></div>
-            <div id="typewriter1"></div>
+            
+            <div class="main-content">
+                    <div class="concept concept-one">
+                      <div class="hover hover-1"></div>
+                      <div class="hover hover-2"></div>
+                      <div class="hover hover-3"></div>
+                      <div class="hover hover-4"></div>
+                      <div class="hover hover-5"></div>
+                      <div class="hover hover-6"></div>
+                      <div class="hover hover-7"></div>
+                      <div class="hover hover-8"><div>
+                            @if (Route::has('login'))
+                                <div>
+                                    @auth
+                                        <a id="login" href="{{ url('/home') }}" style="text-decoration: none;">หน้าหลัก</a>
+                                    @else
+                                        <a id="login" href="{{ route('login') }}"style="text-decoration: none;">ลงชื่อเข้าใช้</a>
+                
+                                        <!-- @if (Route::has('register'))
+                                            <a href="{{ route('register') }}">Register</a>
+                                        @endif -->
+                                    @endauth
+                                </div>
+                            @endif
+                        </div></div>
+                      <div class="hover hover-9"></div>
+                      <h1>Airr Management</h1>
+                    </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            Log In
-            </button>
+            
+            </div>
+            
     </body>
 </html>

@@ -1,0 +1,147 @@
+body{
+   /* background:url("http://orig12.deviantart.net/a72c/f/2014/120/8/c/abstract_geometric_low_poly___wallpaper_by_mcfrolic-d7gjq9d.jpg");   */
+      background-position: 0px 0px;
+      background-repeat:no-repeat;
+       overflow: hidden; 
+      background-color: #DEBDC9;
+    }
+    
+    .centerImg{
+      /* height:100%; */
+     background:url("https://raw.githubusercontent.com/Naphorn/ProjectMA/master/public/image/Picture4.png") no-repeat fixed center center;
+     opacity:1;
+      animation: lowPoly 6.3s ease-in infinite;
+      min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+    }
+    
+    @keyframes lowPoly {
+      25% {opacity:0.25;}
+      50% {opacity:0.50;}
+      75% {opacity:0.75;}
+      100% {opacity:1;}
+    }
+    
+    
+    .container{
+        height:800px;
+    }
+    /* ------------------------------------------------------------- */
+    .main-content {
+      text-align: center;
+      text-transform: uppercase;
+      scroll-snap-type: y mandatory;
+      position: relative;
+
+    }
+    
+    .hover,
+    .word,
+    
+    
+    h1 {
+      position: relative;
+      color: #fff;
+      font: 900 60px Montserrat;
+      text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .concept {
+      position: relative;
+      padding: 5em;
+      height: 100vh;
+      overflow: hidden;
+      scroll-snap-align: center;
+    }
+    .concept:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+      opacity: 0;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .concept:hover:before {
+      opacity: 0.5;
+    }
+    
+    .concept-one {
+      display: grid;
+      grid: repeat(3, 1fr)/repeat(3, 1fr);
+
+    }
+    .concept-one h1 {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 10%;
+      margin-top: -30px;
+      transition: 0.5s ease;
+      z-index: 0;
+      letter-spacing: 25px;
+    }
+    .concept-one .hover {
+      z-index: 1;
+    }
+    .concept-one .hover-1:hover ~ h1 {
+      left: 30px;
+      margin-top: -10px;
+    }
+    .concept-one .hover-2:hover ~ h1 {
+      margin-top: -10px;
+    }
+    .concept-one .hover-3:hover ~ h1 {
+      right: 30px;
+      margin-top: -10px;
+    }
+    .concept-one .hover-4:hover ~ h1 {
+      left: 30px;
+    }
+    .concept-one .hover-6:hover ~ h1 {
+      right: 30px;
+    }
+    .concept-one .hover-7:hover ~ h1 {
+      left: 30px;
+      margin-top: -50px;
+    }
+    .concept-one .hover-8:hover ~ h1 {
+      margin-top: -50px;
+    }
+    .concept-one .hover-9:hover ~ h1 {
+      right: 30px;
+      margin-top: -50px;
+    }
+    /* ----------------------------------------------------------- */
+
+    #typewriter{
+      font-size:50px;
+      color:white;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing:1.5px;
+    
+      position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-490%);
+      
+    }
+
+    #login{
+      font-size: 30px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-150%);
+
+    }

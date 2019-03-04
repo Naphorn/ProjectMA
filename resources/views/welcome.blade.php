@@ -20,7 +20,21 @@
             <div class="container">
             <div class="centerImg"></div>
             <div id="typewriter"></div>
-            
+            <div style="z-index:99; position:relative;">
+                    @if (Route::has('login'))
+                        <div>
+                            @auth
+                                <a id="login" href="{{ url('/home') }}" style="text-decoration: none;">หน้าหลัก</a>
+                            @else
+                                <a id="login" href="{{ route('login') }}"style="text-decoration: none;">ลงชื่อเข้าใช้</a>
+        
+                                <!-- @if (Route::has('register'))
+                                    <a href="{{ route('register') }}">Register</a>
+                                @endif -->
+                            @endauth
+                        </div>
+                    @endif
+                </div>
             <div class="main-content">
                     <div class="concept concept-one">
                       <div class="hover hover-1"></div>
@@ -30,21 +44,7 @@
                       <div class="hover hover-5"></div>
                       <div class="hover hover-6"></div>
                       <div class="hover hover-7"></div>
-                      <div class="hover hover-8"><div>
-                            @if (Route::has('login'))
-                                <div>
-                                    @auth
-                                        <a id="login" href="{{ url('/home') }}" style="text-decoration: none;">หน้าหลัก</a>
-                                    @else
-                                        <a id="login" href="{{ route('login') }}"style="text-decoration: none;">ลงชื่อเข้าใช้</a>
-                
-                                        <!-- @if (Route::has('register'))
-                                            <a href="{{ route('register') }}">Register</a>
-                                        @endif -->
-                                    @endauth
-                                </div>
-                            @endif
-                        </div></div>
+                      <div class="hover hover-8"></div>
                       <div class="hover hover-9"></div>
                       <h1>Airr Management</h1>
                     </div>

@@ -54,7 +54,7 @@ body{
       padding: 5em;
       height: 100vh;
       overflow: hidden;
-      scroll-snap-align: center;
+
     }
     .concept:before {
       content: "";
@@ -227,7 +227,25 @@ body{
         transform: translateX(-55%) translateY(1600%);
       }
     }
-    @media screen and (min-width: 1280px) and (max-width: 1921px) 
+    @media screen and (min-width: 1280px) and (max-width: 1681px) 
+    /* and (max-height: px) and (min-height: px ) */
+    {
+      
+      /* --------------------------AIRR MANAGEMENT----------------------- */
+      .concept-one h1 {
+        letter-spacing: 25px;
+      }
+      .hover, .word, h1 {
+        font: 900 60px Montserrat;
+      }
+
+      /* ------------------login--------------- */
+      #login {
+        font-size: 40px;
+        transform: translateX(-55%) translateY(1400%);
+      }
+    }
+    @media screen and (min-width: 1682px) and (max-width: 1921px) 
     /* and (max-height: px) and (min-height: px ) */
     {
       

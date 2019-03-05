@@ -57,7 +57,7 @@ Route::resource('adminuser', 'UsersController');
 Route::resource('level', 'LevelController');
 Route::resource('adminlevel', 'LevelController');
 
-// Route::resource('status', 'StatusairController');
+Route::resource('status', 'StatusairController');
 Route::resource('adminstatus', 'StatusairController');
 
 Route::resource('building', 'BuildingController');

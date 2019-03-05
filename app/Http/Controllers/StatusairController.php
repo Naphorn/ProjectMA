@@ -27,7 +27,7 @@ class StatusairController extends Controller
      */
     public function create()
     {
-        // return view('admin.addstatus');
+        return view('admin.addstatus');
     }
 
     /**
@@ -38,7 +38,35 @@ class StatusairController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'level_id' => 'required',
+            'room_no' => 'required',
+            'cool_temp' => 'required',
+            'humidity' => 'required',
+            'room_temp' => 'required',
+            'volt_cool' => 'required',
+            'current_cool' => 'required',
+            'current_hot' => 'required',
+            'wind_speed' => 'required',
+            'performance' => 'required',
+            'power_status' => 'required',
+        ]);
+        $statusairs = new StatusAir
+        ([
+            'level_id' => $request->get('level_id'),
+            'room_no' => $request->get('room_no'),
+            'cool_temp' => $request->get('cool_temp'),
+            'humidity' => $request->get('humidity'),
+            'room_temp' => $request->get('room_temp'),
+            'volt_cool' => $request->get('volt_cool'),
+            'current_cool' => $request->get('current_cool'),
+            'current_hot' => $request->get('current_hot'),
+            'wind_speed' => $request->get('wind_speed'),
+            'performance' => $request->get('performance'),
+            'power_status' => $request->get('power_status'),
+        ]);
+        $statusairs->save();
+        return view("admin.admin")->with('success','Complet');
     }
 
     /**

@@ -7,7 +7,7 @@
 @auth
 <div class="container">
     <a class="btn btn-primary" href="{{ url('/user/create') }}" role="button">Insert Users</a>
-    {{-- <a class="btn btn-secondary" href="{{ url('/status/create') }}" role="button">Insert Status Data</a> --}}
+    <a class="btn btn-secondary" href="{{ url('/status/create') }}" role="button">Insert Status Data</a>
     <a class="btn btn-success" href="{{ url('/level/create') }}" role="button">Insert Levels Data</a>
     <a class="btn btn-danger" href="{{ url('/building/create') }}" role="button">Insert Buildings Data</a>
     <br />

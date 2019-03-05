@@ -60,6 +60,12 @@ class LevelController extends Controller
         return view('level', compact('id'));
     }
 
+    public function show2($id)
+    {
+        $id = StatusAir::where('id',$id)->get();
+        return view('level2', compact('id'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

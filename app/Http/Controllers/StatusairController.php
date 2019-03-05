@@ -150,4 +150,13 @@ class StatusairController extends Controller
         return back()->withInput();
         // return view('home');
     }
+
+    public function room_detail($id)
+    {
+       // echo "string";
+        $statusairs = StatusAir::where('room_no',$id)->get();
+      //  $statusairs =  json_decode(json_encode($statusairs));
+       return response()->json(['success'=>'Data is successfully added ','data'=>json_encode($statusairs)]);
+        //return response()->json(['response' => $statusairs]);
+    }
 }

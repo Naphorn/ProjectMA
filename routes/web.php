@@ -33,6 +33,16 @@ Route::get('/admin', function () {
     return view('admin.admin');
 });
 
+Route::get('/level1', function () {
+    return view('level');
+});
+
+Route::get('/main', function () {
+    return view('level2');
+});
+
+Route::get('/ajax_get_data_room_detail/{id}', 'StatusairController@room_detail');
+
 Route::get('/levelon/{id}', 'LevelController@poweron');
 Route::get('/leveloff/{id}', 'LevelController@poweroff');
 

@@ -12,7 +12,7 @@
             <h3 align="center">Status Data</h3>
             <br />
             <div align="center">
-                <a href="{{route('register')}}" class="btn btn-success">Add</a>
+                <a href="{{ url('/status/create') }}" class="btn btn-success">Add</a>
                 <br />
                 <br />
             </div>

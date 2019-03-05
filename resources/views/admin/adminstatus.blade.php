@@ -11,11 +11,11 @@
             <br />
             <h3 align="center">Status Data</h3>
             <br />
-            {{-- <div align="center">
+            <div align="center">
                 <a href="{{route('register')}}" class="btn btn-success">Add</a>
                 <br />
                 <br />
-            </div> --}}
+            </div>
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>ID</th>

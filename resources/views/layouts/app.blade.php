@@ -29,7 +29,7 @@
                 </a>
                 @auth
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    {{'หน้าหลัก'}}
+                    {{'Home'}}
                 </a>
                 {{-- <a class="navbar-brand" href="{{ url('/level/1') }}">
                     {{'ชั้น 1'}}
@@ -46,8 +46,8 @@
                 <a class="navbar-brand" href="{{ url('/level/5') }}">
                     {{'ชั้น 5'}}
                 </a> --}}
-                <a class="navbar-brand" href="{{ url('/adduser') }}">
-                    {{'เพิ่มผู้ใช้งาน'}}
+                <a class="navbar-brand" href="{{ url('/admin') }}">
+                    {{'Admin'}}
                 </a>
                 @endauth
 

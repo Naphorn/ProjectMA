@@ -16,7 +16,8 @@ class LevelController extends Controller
      */
     public function index()
     {
-        //
+        $levels = Level::get();
+        return view('admin.adminlevel', compact('levels'));
     }
 
     /**
@@ -26,7 +27,7 @@ class LevelController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.addlevel');
     }
 
     /**
@@ -37,7 +38,14 @@ class LevelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [ 'level_name' => 'required', 'building_id' => 'required' ]);
+        $levels = new Level
+        ([
+            'level_name' => $request->get('level_name'),
+            'building_id' => $request->get('building_id')
+        ]);
+        $levels->save();
+        return view("admin.admin")->with('success','Complet');
     }
 
     /**
@@ -83,7 +91,10 @@ class LevelController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // dd($id);
+        $levels = Level::find($id);
+        $levels->delete();
+        return view("admin.admin")->with('success', 'Delete data successfully');
     }
 
     // ควบคุม switch ON ของเครื่องปรับอากาศ

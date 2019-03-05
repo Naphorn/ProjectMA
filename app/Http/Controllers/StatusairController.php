@@ -16,8 +16,8 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::where('id',1)->get();
-        return view('home', compact('statusairs'));
+        $statusairs = StatusAir::get();
+        return view('admin.adminstatus', compact('statusairs'));
     }
 
     /**
@@ -27,7 +27,7 @@ class StatusairController extends Controller
      */
     public function create()
     {
-        //
+        // return view('admin.addstatus');
     }
 
     /**
@@ -83,7 +83,10 @@ class StatusairController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // dd($id);
+        $statusairs = StatusAir::find($id);
+        $statusairs->delete();
+        return view("admin.admin")->with('success', 'Delete data successfully');
     }
 
     // ควบคุม switch ON ของเครื่องปรับอากาศ

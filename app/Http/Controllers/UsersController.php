@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\StatusAir;
-use App\Level;
-use App\Building;
+use App\User;
 
-class BuildingController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,8 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        $builds = Building::get();
-        return view('admin.adminbuilding', compact('builds'));
+        $userss = User::get();
+        return view('admin.adminuser', compact('userss'));
     }
 
     /**
@@ -27,7 +25,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        return view('admin.addbuilding');
+        return view('admin.adduser');
     }
 
     /**
@@ -38,13 +36,7 @@ class BuildingController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [ 'building_name' => 'required']);
-        $builds = new Building
-        ([
-            'building_name' => $request->get('building_name'),
-        ]);
-        $builds->save();
-        return view("admin.admin")->with('success','Complet');
+        //
     }
 
     /**
@@ -90,8 +82,8 @@ class BuildingController extends Controller
     public function destroy($id)
     {
         // dd($id);
-        $builds = Building::find($id);
-        $builds->delete();
+        $user = User::find($id);
+        $user->delete();
         return view("admin.admin")->with('success', 'Delete data successfully');
     }
 }

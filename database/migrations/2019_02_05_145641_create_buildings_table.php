@@ -15,10 +15,8 @@ class CreateBuildingsTable extends Migration
     {
         Schema::create('buildings', function (Blueprint $table) {
             $table->increments('id');
-            // หมายเลขชั้น
-            $table->integer('floor');
-            // ชื่อห้อง
-            $table->integer('num_room');
+            // ชื่ออาคาร
+            $table->string('building_name');
             $table->timestamps();
         });
     }

@@ -18,8 +18,10 @@ class CreateLevelsTable extends Migration
             $table->increments('id');
             // หมายเลขชั้น
             $table->integer('level_name');
-            // หมายเลขชั้น
+            // หมายเลขของอาคาร
             $table->string('building_id');
+            // ลิ้งค์ภาพ
+            $table->string('imglink');
             $table->timestamps();
         });
     }

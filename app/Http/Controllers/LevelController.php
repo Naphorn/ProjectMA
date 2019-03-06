@@ -38,11 +38,12 @@ class LevelController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [ 'level_name' => 'required', 'building_id' => 'required' ]);
+        $this->validate($request, [ 'level_name' => 'required', 'building_id' => 'required' , 'imglink' => 'required' ]);
         $levels = new Level
         ([
             'level_name' => $request->get('level_name'),
-            'building_id' => $request->get('building_id')
+            'building_id' => $request->get('building_id'),
+            'imglink' => $request->get('imglink')
         ]);
         $levels->save();
         return view("admin.admin")->with('success','Complet');

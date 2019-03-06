@@ -33,6 +33,9 @@
                     <input type="text" name="building_id" class="form-control" placeholder="Building Name" />
                 </div>
                 <div class="form-group">
+                    <input type="text" name="imglink" class="form-control" placeholder="Link Image" />
+                </div>
+                <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="submit" />
                 </div>
             </form>

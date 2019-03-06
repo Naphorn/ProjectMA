@@ -21,6 +21,7 @@
                     <th>ID</th>
                     <th>Level Name</th>
                     <th>Building Name</th>
+                    <th>Link Image</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -29,6 +30,7 @@
                     <td>{{$row->id}}</td>
                     <td>{{$row->level_name}}</td>
                     <td>{{$row->building_id}}</td>
+                    <td>{{$row->imglink}}</td>
                     <td><a href="#" class="btn btn-primary">Edit</a></td>
                     <td>
                         <form method="post" class="delete_form" action="{{action('LevelController@destroy', $row['id'])}}">

@@ -34,10 +34,10 @@ Route::get('/admin', function () {
 });
 
 Route::get('/level1', function () {
-    return view('level');
+    return view('level1');
 });
 
-Route::get('/main', function () {
+Route::get('/level2', function () {
     return view('level2');
 });
 

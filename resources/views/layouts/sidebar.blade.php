@@ -69,7 +69,7 @@
                     <a class="nav-link" href="{{ url('/level1') }}">ชั้น 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/level/2') }}">ชั้น 2</a>
+                    <a class="nav-link" href="{{ url('/level2') }}">ชั้น 2</a>
                 </li>
             </ul>
     </div>

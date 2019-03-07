@@ -31,7 +31,9 @@
                     <td>{{$row->level_name}}</td>
                     <td>{{$row->building_id}}</td>
                     <td>{{$row->imglink}}</td>
-                    <td><a href="#" class="btn btn-primary">Edit</a></td>
+                    <td>
+                        <a href="{{action('LevelController@edit', $row['id'])}}" class="btn btn-warning">Edit</a>
+                    </td>
                     <td>
                         <form method="post" class="delete_form" action="{{action('LevelController@destroy', $row['id'])}}">
                             {{csrf_field()}}

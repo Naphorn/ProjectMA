@@ -30,7 +30,7 @@
                     <input type="text" name="level_name" class="form-control" placeholder="Level Name" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="building_id" class="form-control" placeholder="Building Name" />
+                    <input type="text" name="building_id" class="form-control" placeholder="Building ID" />
                 </div>
                 <div class="form-group">
                     <input type="text" name="imglink" class="form-control" placeholder="Link Image" />

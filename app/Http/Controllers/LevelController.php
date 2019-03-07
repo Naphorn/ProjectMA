@@ -46,7 +46,7 @@ class LevelController extends Controller
             'imglink' => $request->get('imglink')
         ]);
         $levels->save();
-        return view("admin.admin")->with('success','Complet');
+        return view("home")->with('success','Complet');
     }
 
     /**
@@ -101,7 +101,7 @@ class LevelController extends Controller
         // dd($id);
         $levels = Level::find($id);
         $levels->delete();
-        return view("admin.admin")->with('success', 'Delete data successfully');
+        return view("home")->with('success', 'Delete data successfully');
     }
 
     // ควบคุม switch ON ของเครื่องปรับอากาศ

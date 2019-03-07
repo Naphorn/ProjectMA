@@ -84,6 +84,6 @@ class UsersController extends Controller
         // dd($id);
         $user = User::find($id);
         $user->delete();
-        return view("admin.admin")->with('success', 'Delete data successfully');
+        return view("home")->with('success', 'Delete data successfully');
     }
 }

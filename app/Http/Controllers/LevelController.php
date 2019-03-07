@@ -75,8 +75,7 @@ class LevelController extends Controller
      */
     public function edit($id)
     {
-        $levels = Level::find($id);
-	    return view('admin.editlevel', compact('levels', 'id'));
+        //
     }
 
     /**
@@ -88,19 +87,7 @@ class LevelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'level_name' => 'required',
-            'building_id' => 'required',
-            'imglink' => 'required'
-        ]);
-        $levels = Level::find($id);
-
-        $levels->level_name = $request->get('level_name');
-        $levels->building_id = $request->get('building_id');
-        $levels->imglink = $request->get('imglink');
-
-        $levels->save();
-        return view("home")->with('success','Update Complet');
+        //
     }
 
     /**

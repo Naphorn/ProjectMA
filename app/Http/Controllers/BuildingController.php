@@ -66,8 +66,7 @@ class BuildingController extends Controller
      */
     public function edit($id)
     {
-        $builds = Building::find($id);
-	    return view('admin.editbuilding', compact('builds', 'id'));
+        //
     }
 
     /**
@@ -79,13 +78,7 @@ class BuildingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [ 'building_name' => 'required']);
-        $builds = Building::find($id);
-
-        $builds->building_name = $request->get('building_name');
-
-        $builds->save();
-        return view("home")->with('success','Update Complet');
+        //
     }
 
     /**

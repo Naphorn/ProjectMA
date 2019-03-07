@@ -24,10 +24,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/admin', function () {
-    return view('admin.admin');
-});
-
 Route::get('/level1', function () {
     return view('level1');
 });

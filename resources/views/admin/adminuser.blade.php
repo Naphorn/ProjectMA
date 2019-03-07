@@ -31,14 +31,12 @@
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
-                @foreach($user as $row)
+                @foreach($userss as $row)
                 <tr>
                     <td>{{$row->id}}</td>
                     <td>{{$row->name}}</td>
                     <td>{{$row->email}}</td>
-                    <td>
-                        <a href="{{action('UsersController@edit', $row['id'])}}" class="btn btn-warning">Edit</a>
-                    </td>
+                    <td><a href="#" class="btn btn-primary">Edit</a></td>
                     <td>
                         <form method="post" class="delete_form" action="{{action('UsersController@destroy', $row['id'])}}">
                             {{csrf_field()}}

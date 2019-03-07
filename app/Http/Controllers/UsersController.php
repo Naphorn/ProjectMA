@@ -14,8 +14,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $user = User::get();
-        return view('admin.adminuser', compact('user'));
+        $userss = User::get();
+        return view('admin.adminuser', compact('userss'));
     }
 
     /**
@@ -36,21 +36,7 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
-            'password_confirmation' => 'required',
-        ]);
-        $user = new User
-        ([
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'password' => $request->get('password'),
-            'password_confirmation' => $request->get('password_confirmation'),
-        ]);
-        $user->save();
-        return view("home")->with('success','Complet');
+        //
     }
 
     /**
@@ -72,8 +58,7 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
-	    return view('admin.edituser', compact('user', 'id'));
+        //
     }
 
     /**
@@ -85,21 +70,7 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
-            'password_confirmation' => 'required',
-        ]);
-        $user = User::find($id);
-
-        $user->name = $request->get('name');
-        $user->email = $request->get('email');
-        $user->password = $request->get('password');
-        $user->password = $request->get('password_confirmation');
-
-        $user->save();
-        return view("home")->with('success','Update Complet');
+        //
     }
 
     /**

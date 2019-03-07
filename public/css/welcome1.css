@@ -34,9 +34,7 @@ body{
       text-align: center;
       text-transform: uppercase;
       scroll-snap-type: y mandatory;
-	    position: relative;
-
-	    overflow-y: scroll;
+      position: relative;
 
     }
     
@@ -121,10 +119,7 @@ body{
       margin-top: -50px;
     }
     /* ----------------------------------------------------------- */
-    #buttonlogin{
-      z-index:99; 
-      position:relative;
-    }
+
     #login{
       font-size: 30px;
       color: white;

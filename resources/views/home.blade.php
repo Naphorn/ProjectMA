@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/home.css')}}">
@@ -6,10 +6,7 @@
 @section('content')
 @auth
 
-<div class="container">
-    @extends('layouts.sidebar')
 Home
-</div>
 
 @endauth
 @endsection

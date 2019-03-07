@@ -20,11 +20,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// สามารถให้ admin เพิิิ่มผู้ใช้ได้เท่านั้น
-Route::get('/adduser', function () {
-    return view('adduser');
-});
-
 Route::get('/home', function () {
     return view('home');
 });

@@ -27,7 +27,9 @@
                 <tr>
                     <td>{{$row->id}}</td>
                     <td>{{$row->building_name}}</td>
-                    <td><a href="#" class="btn btn-primary">Edit</a></td>
+                    <td>
+                        <a href="{{action('BuildingController@edit', $row['id'])}}" class="btn btn-warning">Edit</a>
+                    </td>
                     <td>
                         <form method="post" class="delete_form" action="{{action('BuildingController@destroy', $row['id'])}}">
                             {{csrf_field()}}

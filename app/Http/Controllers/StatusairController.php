@@ -88,7 +88,8 @@ class StatusairController extends Controller
      */
     public function edit($id)
     {
-        //
+        $statusairs = StatusAir::find($id);
+	    return view('admin.editstatus', compact('statusairs', 'id'));
     }
 
     /**
@@ -100,7 +101,35 @@ class StatusairController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'level_id' => 'required',
+            'room_no' => 'required',
+            'cool_temp' => 'required',
+            'humidity' => 'required',
+            'room_temp' => 'required',
+            'volt_cool' => 'required',
+            'current_cool' => 'required',
+            'current_hot' => 'required',
+            'wind_speed' => 'required',
+            'performance' => 'required',
+            'power_status' => 'required',
+        ]);
+        $statusairs = StatusAir::find($id);
+
+        $statusairs->level_id = $request->get('level_id');
+        $statusairs->room_no = $request->get('room_no');
+        $statusairs->cool_temp = $request->get('cool_temp');
+        $statusairs->humidity = $request->get('humidity');
+        $statusairs->room_temp = $request->get('room_temp');
+        $statusairs->volt_cool = $request->get('volt_cool');
+        $statusairs->current_cool = $request->get('current_cool');
+        $statusairs->current_hot = $request->get('current_hot');
+        $statusairs->wind_speed = $request->get('wind_speed');
+        $statusairs->performance = $request->get('performance');
+        $statusairs->power_status = $request->get('power_status');
+
+        $statusairs->save();
+        return view("home")->with('success','Update Complet');
     }
 
     /**

@@ -47,7 +47,9 @@
                     <td>{{$row->wind_speed}}</td>
                     <td>{{$row->performance}}</td>
                     <td>{{$row->power_status}}</td>
-                    <td><a href="#" class="btn btn-primary">Edit</a></td>
+                    <td>
+                        <a href="{{action('StatusairController@edit', $row['id'])}}" class="btn btn-warning">Edit</a>
+                    </td>
                     <td>
                         <form method="post" class="delete_form" action="{{action('StatusairController@destroy', $row['id'])}}">
                             {{csrf_field()}}

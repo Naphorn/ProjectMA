@@ -21,14 +21,14 @@
                     <th>ID</th>
                     <th>Floor</th>
                     <th>Room</th>
-                    <th>Cold coil temperature</th>
+                    <th>Cool coil temperature</th>
                     <th>Humidity</th>
                     <th>Room temperature</th>
-                    <th>Cold coil voltage</th>
-                    <th>Cold coil current</th>
+                    <th>Cool coil voltage</th>
+                    <th>Cool coil current</th>
                     <th>Hot coil current</th>
                     <th>Wind speed</th>
-                    <th>Performance</th>
+                    <th>EER</th>
                     <th>Status</th>
                     <th>Edit</th>
                     <th>Delete</th>

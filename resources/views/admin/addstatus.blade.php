@@ -33,7 +33,7 @@
                     <input type="text" name="room_no" class="form-control" placeholder="Room Name" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="cool_temp" class="form-control" placeholder="Cold coil temperature" />
+                    <input type="text" name="cool_temp" class="form-control" placeholder="Cool coil temperature" />
                 </div>
                 <div class="form-group">
                     <input type="text" name="humidity" class="form-control" placeholder="Humidity" />
@@ -42,10 +42,10 @@
                     <input type="text" name="room_temp" class="form-control" placeholder="Room temperature" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="volt_cool" class="form-control" placeholder="Cold coil voltage" />
+                    <input type="text" name="volt_cool" class="form-control" placeholder="Cool coil voltage" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="current_cool" class="form-control" placeholder="Cold coil current" />
+                    <input type="text" name="current_cool" class="form-control" placeholder="Cool coil current" />
                 </div>
                 <div class="form-group">
                     <input type="text" name="current_hot" class="form-control" placeholder="Hot coil current" />

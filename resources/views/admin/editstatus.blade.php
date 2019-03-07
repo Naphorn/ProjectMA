@@ -16,7 +16,7 @@
                     <input type="text" name="room_no" class="form-control" value="{{$statusairs->room_no}}" placeholder="Room Name" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="cool_temp" class="form-control" value="{{$statusairs->cool_temp}}" placeholder="Cold coil temperature" />
+                    <input type="text" name="cool_temp" class="form-control" value="{{$statusairs->cool_temp}}" placeholder="Cool coil temperature" />
                 </div>
                 <div class="form-group">
                     <input type="text" name="humidity" class="form-control" value="{{$statusairs->humidity}}" placeholder="Humidity" />
@@ -25,10 +25,10 @@
                     <input type="text" name="room_temp" class="form-control" value="{{$statusairs->room_temp}}" placeholder="Room temperature" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="volt_cool" class="form-control" value="{{$statusairs->volt_cool}}" placeholder="Cold coil voltage" />
+                    <input type="text" name="volt_cool" class="form-control" value="{{$statusairs->volt_cool}}" placeholder="Cool coil voltage" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="current_cool" class="form-control" value="{{$statusairs->current_cool}}" placeholder="Cold coil current" />
+                    <input type="text" name="current_cool" class="form-control" value="{{$statusairs->current_cool}}" placeholder="Cool coil current" />
                 </div>
                 <div class="form-group">
                     <input type="text" name="current_hot" class="form-control" value="{{$statusairs->current_hot}}" placeholder="Hot coil current" />

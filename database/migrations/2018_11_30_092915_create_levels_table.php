@@ -17,9 +17,9 @@ class CreateLevelsTable extends Migration
             // ลำดับของตาราง
             $table->increments('id');
             // หมายเลขชั้น
-            $table->integer('level_name');
+            $table->string('level_name');
             // หมายเลขของอาคาร
-            $table->string('building_id');
+            $table->integer('building_id');
             // ลิ้งค์ภาพ
             $table->string('imglink');
             $table->timestamps();

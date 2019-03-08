@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/home.css')}}">
 <script src="{{ asset('js/level-get-data-room.js') }}" defer></script>
 @endsection
 @section('content')

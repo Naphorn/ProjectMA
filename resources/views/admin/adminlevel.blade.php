@@ -20,7 +20,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Level Name</th>
-                    <th>Building Name</th>
+                    <th>Building ID</th>
                     <th>Link Image</th>
                     <th>Edit</th>
                     <th>Delete</th>

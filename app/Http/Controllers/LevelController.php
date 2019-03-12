@@ -111,27 +111,8 @@ class LevelController extends Controller
      */
     public function destroy($id)
     {
-        // dd($id);
         $levels = Level::find($id);
         $levels->delete();
         return view("home")->with('success', 'Delete data successfully');
-    }
-
-    // ควบคุม switch ON ของเครื่องปรับอากาศ
-    public function poweron($id)
-    {
-        $poweron = StatusAir::find($id);
-        $poweron->power_status = 'ON';
-        $poweron->save();
-        return back()->withInput();
-    }
-
-    // ควบคุม switch OFF ของเครื่องปรับอากาศ
-    public function poweroff($id)
-    {
-        $poweroff = StatusAir::find($id);
-        $poweroff->power_status = 'OFF';
-        $poweroff->save();
-        return back()->withInput();
     }
 }

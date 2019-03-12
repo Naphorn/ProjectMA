@@ -32,15 +32,15 @@ Route::get('/level2', function () {
     return view('level2');
 });
 
+Route::get('/colortest', function () {
+    return view('colortest');
+});
+
+Route::get('/colortest1', function () {
+    return view('colortest1');
+});
+
 Route::get('/ajax_get_data_room_detail/{id}', 'StatusairController@room_detail');
-
-Route::get('/levelon/{id}', 'LevelController@poweron');
-Route::get('/leveloff/{id}', 'LevelController@poweroff');
-
-Route::get('/homeon/{id}', 'StatusairController@poweron');
-Route::get('/homeoff/{id}', 'StatusairController@poweroff');
-
-Route::get('/performanceairs/{id}', 'StatusairController@performanceairs');
 
 Route::resource('user', 'UsersController');
 Route::resource('adminuser', 'UsersController');

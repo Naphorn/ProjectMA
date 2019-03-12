@@ -140,7 +140,7 @@
                 <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar" style="height: auto;">
                     <!-- search form -->
-                    <form action="https://adminlte.io/themes/AdminLTE/index2.html?fbclid=IwAR3UMvlAjldTOVHwLOKTPC45YMRClv5xxUOwDWQzMp9rUVhIMjhxJA7aQLU#" method="get" class="sidebar-form">
+                    <form action="#" method="get" class="sidebar-form">
                         <div class="input-group">
                             <input type="text" name="q" class="form-control" placeholder="Search...">
                             <span class="input-group-btn">

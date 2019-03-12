@@ -243,7 +243,7 @@
             </aside>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="min-height: 960px;">
+            <div class="content-wrapper" style="min-height: 960px;overflow-x: auto;">
 
                 @yield('content')
 

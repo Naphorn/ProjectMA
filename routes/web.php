@@ -31,6 +31,9 @@ Route::get('/level1', function () {
 Route::get('/level2', function () {
     return view('level2');
 });
+Route::get('/notify', function () {
+    return view('notify');
+});
 
 Route::get('/ajax_get_data_room_detail/{id}', 'StatusairController@room_detail');
 

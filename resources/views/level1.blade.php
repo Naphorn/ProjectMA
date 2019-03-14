@@ -7,6 +7,28 @@
 @auth
 
 <style>
+    /* ----------------------EER Collor-------------------- */
+    .cellGreen
+    {
+        background-color: #00FF00;
+    }
+    .cellYellowGreen
+    {
+        background-color: #9ACD32;
+    }
+    .cellYellow
+    {
+        background-color: #FFFF00;
+    }
+    .cellOrange
+    {
+        background-color: #FFA500;
+    }
+    .cellRed
+    {
+        background-color: #FF0000;
+    }
+    /* ---------------------------------------------------- */
     tr
     {mso-height-source:auto;}
     col
@@ -128,11 +150,13 @@
     border-left:.5pt solid windowtext;}
 </style>
 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <table border=0 cellpadding=0 cellspacing=0 width=100%>
 <col class=xl65 width=53 span=28 style='mso-width-source:userset;mso-width-alt: 1696;width:40pt'>
     <tr height=19 style='height:14.25pt'>
     <td colspan=4 rowspan=6 height=114 class=xl66 width=212 style='height:85.5pt; width:160pt' onclick="ajax_get_data_room_detail('IE4103')">IE4103</td>
-        <td colspan=5 rowspan=6 class=xl66 width=265 style='width:200pt' onclick="ajax_get_data_room_detail('IE4101')">IE4101</td>
+        <td colspan=5 rowspan=6 class=xl66 width=265 style='width:200pt' onclick="ajax_get_data_room_detail('IE4101')" id="tablecell">IE4101</td>
         <td class=xl65 width=53 style='width:40pt'></td>
         <td colspan=3 rowspan=6 class=xl66 width=159 style='width:120pt' onclick="ajax_get_data_room_detail('IE3114')">IE3114</td>
         <td class=xl65 width=53 style='width:40pt'></td>
@@ -1214,7 +1238,34 @@
     </form>
 </div>
 {{-- ---------------------------------------------------------------------------------------------- --}}
-
+<script>
+    $(function() {
+        $("#tablecell").each(function()
+        {
+            var colText = $(this).text();
+            if (colText == 'IE4101')
+            {
+                $(this).addClass("cellGreen");
+            }
+            else if (colText == 'eer-4-4.99')
+            {
+                $(this).addClass("cellYellowGreen");
+            }
+            else if (colText == 'eer-3-3.99')
+            {
+                $(this).addClass("cellYellow");
+            }
+            else if (colText == 'eer-1-2.99')
+            {
+                $(this).addClass("cellOrange");
+            }
+            else
+            {
+                $(this).addClass("cellRed");
+            }
+        });
+    });
+</script>
 
 @endauth
 @endsection

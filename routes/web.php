@@ -24,13 +24,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/level1', function () {
-    return view('level1');
+Route::get('/levels', function () {
+    return view('levels');
 });
 
-Route::get('/level2', function () {
-    return view('level2');
-});
 Route::get('/notify', function () {
     return view('notify');
 });

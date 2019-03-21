@@ -218,8 +218,7 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="{{url('/level1')}}"><i class="fa fa-circle-o"></i> Level 1</a></li>
-                                <li><a href="{{url('/level2')}}"><i class="fa fa-circle-o"></i> Level 2</a></li>
+                                <li><a href="{{url('/levels')}}"><i class="fa fa-circle-o"></i> Level 1</a></li>
                             </ul>
                         </li>
 

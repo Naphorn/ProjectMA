@@ -18,6 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ---------------------Front-End------------------------------------------------------------------
+Route::get('/main', function () {
+    return view('main');
+});
+Route::get('/main', 'HomeController@index_frontend');
+Route::get('/building/{id}', 'HomeController@building_index');
+Route::get('/building/deital/{building_id}/{level_id}', 'HomeController@building_detail');
+// ------------------------------------------------------------------------------------------------
+
 Auth::routes();
 
 Route::get('/home', function () {
@@ -43,5 +52,5 @@ Route::resource('adminlevel', 'LevelController');
 Route::resource('status', 'StatusairController');
 Route::resource('adminstatus', 'StatusairController');
 
-Route::resource('building', 'BuildingController');
+Route::resource('buildings', 'BuildingController');
 Route::resource('adminbuilding', 'BuildingController');

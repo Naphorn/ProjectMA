@@ -175,7 +175,7 @@
                         </li>
 
                         {{-- admin --}}
-                        <li class="treeview">
+                        {{-- <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-laptop"></i>
                                 <span>Admin</span>
@@ -191,21 +191,14 @@
                                     <a href="{{url('/status/create')}}"><i class="fa fa-circle-o"></i> Insert Status Data</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
 
                         {{-- building name --}}
                         <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa fa-building"></i>
-                                <span>Buildings</span>
-                                <span class="pull-right-container">
+                            <li><a href="{{url('/main')}}"><i class="fa fa fa-building"></i> <span>Building </span></a></li>
+                            <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Building 1</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Building 2</a></li>
-                            </ul>
+                            </span>
                         </li>
 
                         {{-- level name --}}

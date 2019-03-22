@@ -12,7 +12,7 @@
             <h3 align="center">Level Status Data</h3>
             <br />
             <div align="center">
-                <a href="{{url('building/create')}}" class="btn btn-success">Add</a>
+                <a href="{{url('buildings/create')}}" class="btn btn-success">Add</a>
                 <br />
                 <br />
             </div>

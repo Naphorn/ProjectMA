@@ -200,35 +200,6 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </li>
-
-                        {{-- level name --}}
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa fa-navicon (alias)"></i>
-                                <span>Floors</span>
-                                <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="{{url('/levels')}}"><i class="fa fa-circle-o"></i> Level 1</a></li>
-                            </ul>
-                        </li>
-
-                        {{-- room name --}}
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa fa-book"></i>
-                                <span>Rooms</span>
-                                <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Room 1</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Room 2</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </section>
                 <!-- /.sidebar -->

@@ -16,6 +16,8 @@
 
     {!! view($levels->imglink)!!}
 
+
+
 </div>
 @endauth
 @endsection

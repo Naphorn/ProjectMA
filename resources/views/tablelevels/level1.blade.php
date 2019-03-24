@@ -7,28 +7,6 @@
 </head>
 <body>
 <style>
-    /* ----------------------EER Color-------------------- */
-    .cellGreen
-    {
-        background-color: #00FF00;
-    }
-    .cellYellowGreen
-    {
-        background-color: #9ACD32;
-    }
-    .cellYellow
-    {
-        background-color: #FFFF00;
-    }
-    .cellOrange
-    {
-        background-color: #FFA500;
-    }
-    .cellRed
-    {
-        background-color: #FF0000;
-    }
-    /* ---------------------------------------------------- */
     tr
     {mso-height-source:auto;}
     col

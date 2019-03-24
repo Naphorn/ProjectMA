@@ -14,31 +14,7 @@
         </ol>
     </nav>
 
-    {{-- @php var_dump($levels);@endphp --}}
-
-    {{-- @include('{{$levels->imglink}}') --}}
-
-    {{-- @include('tablelevels.level1') --}}
-    {{-- @include("{{$levels->imglink}}") --}}
-
-    {{$levels->imglink}}
-
-    {{-- @include("{{$levels->imglink}}") --}}
-
-
-    {{-- <base target="_blank" href="{{$levels->imglink}}"> --}}
-
-    {{-- <script>
-        var ajax = new XMLHttpRequest();
-        ajax.onreadystatechange = function() {
-            if (ajax.readyState == 4) {
-                alert(ajax.responseText);
-            }
-        };
-        ajax.open("GET", "tablelevels/testfile.php", true);
-        ajax.send(null);
-    </script> --}}
-
+    {!! view($levels->imglink)!!}
 
 </div>
 @endauth

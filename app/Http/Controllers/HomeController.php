@@ -45,8 +45,8 @@ class HomeController extends Controller
     			->where('buildings.id', $building_id)
 				->first();
     	$levels = DB::table('levels')
-    			->where('levels.id', $level_id)
-				->first();
+                ->where('levels.id', $level_id)
+                ->first();
     	$data = DB::table('status_airs')
 		    	->join('levels', 'levels.id', '=', 'status_airs.level_id')
 		        ->join('buildings', 'buildings.id', '=', 'levels.building_id')
@@ -55,5 +55,6 @@ class HomeController extends Controller
     			->where('levels.id', $level_id)
 				->get();
         return view('building_detail',['data' => $data,'buildings' => $buildings,'levels' => $levels]);
+        // dd($levels) ;
     }
 }

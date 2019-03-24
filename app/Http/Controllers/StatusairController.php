@@ -165,10 +165,10 @@ class StatusairController extends Controller
 
     public function room_detail($id)
     {
-       // echo "string";
+        // echo "string";
         $statusairs = StatusAir::where('room_no',$id)->get();
-      //  $statusairs =  json_decode(json_encode($statusairs));
-       return response()->json(['success'=>'Data is successfully added ','data'=>json_encode($statusairs)]);
+        // $statusairs =  json_decode(json_encode($statusairs));
+        return response()->json(['success'=>'Data is successfully added ','data'=>json_encode($statusairs)]);
         //return response()->json(['response' => $statusairs]);
     }
 }

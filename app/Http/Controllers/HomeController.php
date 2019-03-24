@@ -26,20 +26,22 @@ class HomeController extends Controller
     {
         return view('home');
     }
-     public function index_frontend()
+
+    public function index_frontend()
     {
     	$buildings = DB::table('buildings')->get();
         return view('main',['buildings' => $buildings]);
     }
-     public function building_index($building_id)
+
+    public function building_index($building_id)
     {
     	$data = DB::table('levels')
     	->where('building_id', $building_id)
     	->get();
-
         return view('building',['data' => $data]);
     }
-     public function building_detail($building_id,$level_id)
+
+    public function building_detail($building_id,$level_id)
     {
     	$buildings = DB::table('buildings')
     			->where('buildings.id', $building_id)

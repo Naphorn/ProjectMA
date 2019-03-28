@@ -70,12 +70,15 @@ class HomeController extends Controller
             	->select('status_airs.*')
     			->where('buildings.id', $building_id)
     			->where('levels.id', $level_id)
-        		->get();
-
+                ->get();
+                
+        $statusairs = StatusAir::get();
+        
         return view('building_detail', [
             'data' => $data,
             'buildings' => $buildings,
             'levels' => $levels,
+            'statusairs' => $statusairs,
         ]);
         // dd($data) ;
         // echo $data;

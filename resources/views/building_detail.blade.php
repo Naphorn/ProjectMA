@@ -18,10 +18,18 @@
 
     {!! view($levels->imglink)!!}
 
-    {{-- @foreach($coler as $row)
-        {{$row->room_no}}
-        {{$row->performance}}
-    @endforeach --}}
+    @foreach($statusairs as $row)           
+        <script>
+                var cr = document.getElementById('{{$row->room_no}}');
+                if('{{$row->performance}}'==4){
+                    cr.style.backgroundColor = "green"
+                }
+                else if('{{$row->performance}}'==2){
+                    cr.style.backgroundColor = "red"
+                }
+            </script>
+    @endforeach
+
 
 </div>
 @endauth

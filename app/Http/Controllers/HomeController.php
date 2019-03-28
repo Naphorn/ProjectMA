@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+// ใช้ดาต้าเบส
+use App\Building;
+use App\Level;
+use App\StatusAir;
+
 class HomeController extends Controller
 {
     /**
@@ -41,11 +46,21 @@ class HomeController extends Controller
         return view('building',['data' => $data]);
     }
 
-    public function building_detail($building_id,$level_id)
+    public function building_detail($building_id, $level_id)
     {
+        // $buildings = Building::find($building_id);
+        // $levels = Level::find($level_id);
+        // $data = $levels->status()->get();
+
+        // $buildings = Building::find($building_id);
+        // $levels = Level::where('building_id', $buildings->id)->first();
+        // dump($buildings->levels()->get());
+        // $data = $buildings->levels()->first()->status()->get();
+        // dd($buildings->levels()->first()->status()->get());
+
     	$buildings = DB::table('buildings')
     			->where('buildings.id', $building_id)
-				->first();
+        		->first();
     	$levels = DB::table('levels')
                 ->where('levels.id', $level_id)
                 ->first();
@@ -55,8 +70,17 @@ class HomeController extends Controller
             	->select('status_airs.*')
     			->where('buildings.id', $building_id)
     			->where('levels.id', $level_id)
-				->get();
-        return view('building_detail',['data' => $data,'buildings' => $buildings,'levels' => $levels]);
-        // dd($levels) ;
+        		->get();
+
+        $coler = StatusAir::all();
+
+        return view('building_detail', [
+            'data' => $data,
+            'buildings' => $buildings,
+            'levels' => $levels,
+            'coler' => $coler,
+        ]);
+        // dd($data) ;
+        // echo $data;
     }
 }

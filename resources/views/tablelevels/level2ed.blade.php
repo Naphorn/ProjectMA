@@ -8,29 +8,25 @@
 <body>
 <style>
 /* ----------------------EER Color-------------------- */
-    #cellGreen
+    .room-type-5
     {
         background-color: #00FF00;
     }
-    #cellYellowGreen
+    .room-type-4
     {
         background-color: #9ACD32;
     }
-    #cellYellow
+    .room-type-3
     {
         background-color: #FFFF00;
     }
-    #cellOrange
+    .room-type-2
     {
         background-color: #FFA500;
     }
-    #cellRed
+    .room-type-1
     {
         background-color: #FF0000;
-    }
-    #cellEror
-    {
-        background-color: #000000;
     }
 /* ---------------------------------------------------- */
     tr
@@ -199,7 +195,7 @@
         <td class=xl65 width=53 style='width:40pt'></td>
         <td class=xl65 width=53 style='width:40pt'></td>
         <td class=xl65 width=53 style='width:40pt'></td>
-        <td colspan=3 rowspan=5 class=xl66 width=159 style='width:120pt' onclick="ajax_get_data_room_detail('IE3219')">IE3219</td>
+        <td colspan=3 rowspan=5 class=xl66 width=159 style='width:120pt' onclick="ajax_get_data_room_detail('IE3219')" id="IE3219">IE3219</td>
         <td class=xl65 width=53 style='width:40pt'></td>
         <td class=xl65 width=53 style='width:40pt'></td>
         <td class=xl65 width=53 style='width:40pt'></td>
@@ -300,7 +296,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=2 class=xl74 onclick="ajax_get_data_room_detail('IE3218')">IE3218</td>
+        <td colspan=2 rowspan=2 class=xl74 onclick="ajax_get_data_room_detail('IE3218')" id="IE3218">IE3218</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -343,92 +339,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3217')">IE3217</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3216')">IE3216</td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3217')" id="IE3217">IE3217</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -513,50 +424,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE3215')">IE3215</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3214')">IE3214</td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3216')" id="IE3216">IE3216</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -641,7 +509,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE3213')">IE3213</td>
+        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE3215')" id="IE3215">IE3215</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -674,8 +542,7 @@
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=10 height=190 class=xl66 style='height:142.5pt' onclick="ajax_get_data_room_detail('IE3204')">IE3204</td>
-        <td rowspan=6 class=xl76 style='border-bottom:.5pt solid black' onclick="ajax_get_data_room_detail('IE3205')">IE3205</td>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -683,7 +550,9 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3212')">IE3212</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3214')" id="IE3214">IE3214</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -703,96 +572,6 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=4 height=76 class=xl78 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE3206')">IE3206</td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3207')">IE3207</td>
-        <td colspan=3 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3208')">IE3208</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -848,25 +627,6 @@
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=2 height=38 class=xl66 style='height:28.5pt' onclick="ajax_get_data_room_detail('IE3203')">IE3203</td>
-        <td class=xl65></td>
-        <td colspan=4 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3209')">IE3209</td>
-        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3210')">IE3210</td>
-        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3211')">IE3211</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
         <td height=19 class=xl65 style='height:14.25pt'></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -877,70 +637,8 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
+        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE3213')" id="IE3213">IE3213</td>
         <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=9 height=171 class=xl66 style='height:128.25pt' onclick="ajax_get_data_room_detail('IE3202')">IE3202</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td colspan=2 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE2211')">IE2211</td>
-        <td class=xl65></td>
-        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2212')">IE2212</td>
-        <td colspan=2 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2213')">IE2213</td>
-        <td colspan=2 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2214')">IE2214</td>
-        <td colspan=3 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2215')">IE2215</td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -966,27 +664,14 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl74 onclick="ajax_get_data_room_detail('IE2216')">IE2216</td>
-    </tr>
-    <tr height=19 style='height:14.25pt'>
-        <td height=19 class=xl65 style='height:14.25pt'></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
-        <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=4 height=76 class=xl66 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE3201')">IE3201</td>
+        <td colspan=2 rowspan=10 height=190 class=xl66 style='height:142.5pt' onclick="ajax_get_data_room_detail('IE3204')" id="IE3204">IE3204</td>
+        <td rowspan=6 class=xl76 style='border-bottom:.5pt solid black' onclick="ajax_get_data_room_detail('IE3205')" id="IE3205">IE3205</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -994,8 +679,9 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3212')" id="IE3212">IE3212</td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE2210')">IE2210</td>
+        <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -1006,6 +692,7 @@
     </tr>
     <tr height=19 style='height:14.25pt'>
         <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -1037,7 +724,316 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2217')">IE2217</td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td colspan=2 rowspan=4 height=76 class=xl78 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE3206')" id="IE3206">IE3206</td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3207')" id="IE3207">IE3207</td>
+        <td colspan=3 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE3208')" id="IE3208">IE3208</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td colspan=2 rowspan=2 height=38 class=xl66 style='height:28.5pt' onclick="ajax_get_data_room_detail('IE3203')" id="IE3203">IE3203</td>
+        <td class=xl65></td>
+        <td colspan=4 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3209')" id="IE3209">IE3209</td>
+        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3210')" id="IE3210">IE3210</td>
+        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE3211')" id="IE3211">IE3211</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td colspan=2 rowspan=9 height=171 class=xl66 style='height:128.25pt' onclick="ajax_get_data_room_detail('IE3202')" id="IE3202">IE3202</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td colspan=2 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE2211')" id="IE2211">IE2211</td>
+        <td class=xl65></td>
+        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2212')" id="IE2212">IE2212</td>
+        <td colspan=2 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2213')" id="IE2213">IE2213</td>
+        <td colspan=2 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2214')" id="IE2214">IE2214</td>
+        <td colspan=3 rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2215')" id="IE2215">IE2215</td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td colspan=2 rowspan=4 class=xl74 onclick="ajax_get_data_room_detail('IE2216')" id="IE2216">IE2216</td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td colspan=2 rowspan=4 height=76 class=xl66 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE3201')" id="IE3201">IE3201</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td colspan=2 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE2210')" id="IE2210">IE2210</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+    </tr>
+    <tr height=19 style='height:14.25pt'>
+        <td height=19 class=xl65 style='height:14.25pt'></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td colspan=2 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2217')" id="IE2217">IE2217</td>
     </tr>
     <tr height=19 style='height:14.25pt'>
         <td height=19 class=xl65 style='height:14.25pt'></td>
@@ -1142,7 +1138,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE2209')">IE2209</td>
+        <td colspan=2 rowspan=2 class=xl66 onclick="ajax_get_data_room_detail('IE2209')" id="IE2209">IE2209</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -1169,17 +1165,17 @@
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>
-        <td colspan=2 rowspan=4 height=76 class=xl66 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE2203')">IE2203</td>
+        <td colspan=2 rowspan=4 height=76 class=xl66 style='height:57.0pt' onclick="ajax_get_data_room_detail('IE2203')" id="IE2203">IE2203</td>
         <td class=xl65></td>
-        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2204')">IE2204</td>
-        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2205')">IE2205</td>
-        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2206')">IE2206</td>
-        <td colspan=3 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2207')">IE2207</td>
-        <td class=xl65></td>
-        <td class=xl65></td>
+        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2204')" id="IE2204">IE2204</td>
+        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2205')" id="IE2205">IE2205</td>
+        <td rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2206')" id="IE2206">IE2206</td>
+        <td colspan=3 rowspan=4 class=xl66 onclick="ajax_get_data_room_detail('IE2207')" id="IE2207">IE2207</td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=5 rowspan=8 class=xl72 onclick="ajax_get_data_room_detail('IE2208')">IE2208</td>
+        <td class=xl65></td>
+        <td class=xl65></td>
+        <td colspan=5 rowspan=8 class=xl72 onclick="ajax_get_data_room_detail('IE2208')" id="IE2208">IE2208</td>
         <td colspan=2 rowspan=8 class=xl65></td>
         <td rowspan=8 class=xl68 style='border-bottom:.5pt solid black'>&nbsp;</td>
     </tr>
@@ -1243,7 +1239,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2202')">IE2202</td>
+        <td rowspan=6 class=xl66 onclick="ajax_get_data_room_detail('IE2202')" id="IE2202">IE2202</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -1304,7 +1300,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=3 rowspan=10 class=xl66 onclick="ajax_get_data_room_detail('IE2201')">IE2201</td>
+        <td colspan=3 rowspan=10 class=xl66 onclick="ajax_get_data_room_detail('IE2201')" id="IE2201">IE2201</td>
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
@@ -1350,7 +1346,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=2 rowspan=10 class=xl66 onclick="ajax_get_data_room_detail('IE1202')">IE1202</td>
+        <td colspan=2 rowspan=10 class=xl66 onclick="ajax_get_data_room_detail('IE1202')" id="IE1202">IE1202</td>
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>
@@ -1695,7 +1691,7 @@
         <td class=xl65></td>
         <td class=xl65></td>
         <td class=xl65></td>
-        <td colspan=5 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE1201')">IE1201</td>
+        <td colspan=5 rowspan=8 class=xl66 onclick="ajax_get_data_room_detail('IE1201')" id="IE1201">IE1201</td>
         <td class=xl65></td>
     </tr>
     <tr height=19 style='height:14.25pt'>

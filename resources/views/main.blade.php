@@ -6,6 +6,7 @@
 @auth
 {{-- @php var_dump($buildings);@endphp --}}
 <div class="container">
+    <h1 align="center">Building Name</h1>
     <div class="row">
         @foreach ($buildings as $value)
         <div class="col-md">

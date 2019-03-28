@@ -6,6 +6,7 @@
 @auth
 {{-- @php var_dump($data);@endphp --}}
 <div class="container">
+    <h1 align="center">Floor Name</h1>
     <div class="row">
         @foreach ($data as $value)
         <div class="col-md">

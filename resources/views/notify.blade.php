@@ -1,28 +1,4 @@
-@extends('layouts.master')
-
-@section('css')
-
-    {{-- <script src="{{ asset('notify/index.js') }}" defer></script> --}}
-@endsection
-@section('content')
-@auth
-
-<div class="container" style="majin-top:25px;">
-    <div class="row">
-        <div class="col-md-3" style="border:1px solid #ddd; min-hight: 150px; padding:7px 12px; text-align: center">
-            <a href="#" class="btn btn-danger send-notity" data-id="1"> แจ้งข้อความขัดข้อง</a>
-        </div>
-        <div class="col-md-3" style="border:1px solid #ddd; min-hight: 150px; padding:7px 12px; text-align: center">
-            <a href="#" class="btn btn-danger send-notity" data-id="1"> แจ้งข้อความขัดข้อง</a>
-        </div>
-        <div class="col-md-3" style="border:1px solid #ddd; min-hight: 150px; padding:7px 12px; text-align: center">
-            <a href="#" class="btn btn-danger send-notity" data-id="1"> แจ้งข้อความขัดข้อง</a>
-        </div>
-        <div class="col-md-3" style="border:1px solid #ddd; min-hight: 150px; padding:7px 12px; text-align: center">
-            <a href="#" class="btn btn-danger send-notity" data-id="1"> แจ้งข้อความขัดข้อง</a>
-        </div>
-
-        <?php
+<?php
 function sendToLine($message){
         
 
@@ -49,10 +25,6 @@ function sendToLine($message){
         curl_close ($ch);
 }
 
-sendToLine('ทดลองส่ง1');
-
+sendToLine($statusairs1);
 ?>
-</div>
 
-@endauth
-@endsection

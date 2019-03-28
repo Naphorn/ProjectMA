@@ -37,9 +37,25 @@ Route::get('/levels', function () {
     return view('levels');
 });
 
-Route::get('/notify', function () {
-    return view('notify');
+// Route::get('/notify', function () {
+//     return view('notify');
+// });
+Route::resource('notify', 'NotifyController');
+
+Route::get('/modelnotify', function () {
+    // $post = App\notify::where('performance','<=',2);
+    // return $post;
+    // $post = App\notify::where('performance',2)->first();
+    // return $post;
+    // return view('modelnotify');
+    // return App\notify::all();
+    // $post = App\notify::where('id', 1)
+    // ->orderBy('id')
+    // ->all();
+    $post = App\notify::where('performance','<',3);
+    return $post;
 });
+
 
 Route::get('/ajax_get_data_room_detail/{id}', 'StatusairController@room_detail');
 

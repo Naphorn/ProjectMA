@@ -30,10 +30,6 @@
     {
         background-color: #FF0000;
     }
-    #IE4103
-    {
-        background-color: #FF0000;
-    }
 /* ---------------------------------------------------- */
     tr
     {mso-height-source:auto;}

@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('css')
+<link rel="stylesheet" href="{{ asset('css/room-color.css') }}">
+<script src="{{ asset('js/room-get-color.js') }}" defer></script>
 <script src="{{ asset('js/level-get-data-room.js') }}" defer></script>
 @endsection
 @section('content')
@@ -20,37 +22,7 @@
         {{$row->room_no}}
         {{$row->performance}}
     @endforeach --}}
-    <script type="text/javascript">
-
-// console.log("dfhgtdrflhkjdtfohkktmfrdlhjkio");
-//         @foreach($coler as $row)
-//             $('{{$row->room_no}}').addClass('room-type-{{$row->performance}}');
-//             var nx = {{$row->performance}};
-//             var roomxxx = {{$row->room_no}};
-
-
-//             // console.log('nx');
-//             // document.getElementById('IE4101').style.color = "red";
-//         @endforeach
-        document.getElementsById('IE4101').style.color = "red";
-
-    </script>
 
 </div>
 @endauth
 @endsection
-
-{{-- @section('script')
-
-@endsection --}}
-
-{{--
-<script>
-    (function() {
-        @foreach($coler as $row)
-           if($coler->performance='2')
-           {
-                document.getElementById('IE4101').style.color = "red";
-           }
-        @endforeach })
-</script> --}}

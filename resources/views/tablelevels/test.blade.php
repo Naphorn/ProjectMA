@@ -7,28 +7,6 @@
 </head>
 <body>
 <style>
-/* ----------------------EER Color-------------------- */
-    .room-type-5
-    {
-        background-color: #00FF00;
-    }
-    .room-type-4
-    {
-        background-color: #9ACD32;
-    }
-    .room-type-3
-    {
-        background-color: #FFFF00;
-    }
-    .room-type-2
-    {
-        background-color: #FFA500;
-    }
-    .room-type-1
-    {
-        background-color: #FF0000;
-    }
-/* ---------------------------------------------------- */
     tr
         {mso-height-source:auto;}
     col

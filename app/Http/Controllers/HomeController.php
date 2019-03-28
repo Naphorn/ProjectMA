@@ -72,13 +72,10 @@ class HomeController extends Controller
     			->where('levels.id', $level_id)
         		->get();
 
-        $coler = StatusAir::all();
-
         return view('building_detail', [
             'data' => $data,
             'buildings' => $buildings,
             'levels' => $levels,
-            'coler' => $coler,
         ]);
         // dd($data) ;
         // echo $data;

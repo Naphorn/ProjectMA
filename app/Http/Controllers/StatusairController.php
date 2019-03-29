@@ -16,7 +16,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::get();
+        $statusairs = StatusAir::paginate(10);
         return view('admin.adminstatus', compact('statusairs'));
     }
 

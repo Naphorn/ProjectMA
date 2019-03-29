@@ -44,6 +44,7 @@
                 </tr>
                 @endforeach
             </table>
+            {{ $levels->links() }}
         </div>
     </div>
 </div>

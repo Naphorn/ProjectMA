@@ -40,6 +40,7 @@
                 </tr>
                 @endforeach
             </table>
+            {{ $builds->links() }}
         </div>
     </div>
 </div>

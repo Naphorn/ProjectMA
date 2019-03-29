@@ -16,7 +16,7 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        $builds = Building::get();
+        $builds = Building::paginate(10);
         return view('admin.adminbuilding', compact('builds'));
     }
 

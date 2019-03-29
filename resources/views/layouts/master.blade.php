@@ -85,9 +85,9 @@
                         <li class="dropdown notifications-menu">
                             <a href="https://adminlte.io/themes/AdminLTE/index2.html?fbclid=IwAR3UMvlAjldTOVHwLOKTPC45YMRClv5xxUOwDWQzMp9rUVhIMjhxJA7aQLU#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-bell-o"></i>
-                                <span class="label label-warning">10</span>
+                                {{-- <span class="label label-warning">10</span> --}}
                             </a>
-                            <ul class="dropdown-menu">
+                            {{-- <ul class="dropdown-menu">
                                 <li class="header">You have 10 notifications</li>
                                 <li>
                                     <!-- inner menu: contains the actual data -->
@@ -102,7 +102,7 @@
                                 <li class="footer">
                                     <a href="#">View all</a>
                                 </li>
-                            </ul>
+                            </ul> --}}
                         </li>
 
                         <!-- Authentication Links -->

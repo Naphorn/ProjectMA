@@ -128,7 +128,7 @@
     <col width=72 span=3 style='width:54pt'>
     <tr height=19 style='height:14.25pt'>
         <td colspan=3 rowspan=5 height=95 class=xl65 width=216 style='border-right:
-        .5pt solid black;border-bottom:.5pt solid black;height:71.25pt;width:162pt' onclick="ajax_get_data_room_detail('IE1301')" id="IE1301">IE1301</td>
+        .5pt solid black;border-bottom:.5pt solid black;height:71.25pt;width:162pt' onclick="ajax_get_data_room_detail('Test')" id="Test">Test</td>
     </tr>
     <tr height=19 style='height:14.25pt'></tr>
     <tr height=19 style='height:14.25pt'></tr>

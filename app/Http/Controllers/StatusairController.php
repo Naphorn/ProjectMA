@@ -171,4 +171,15 @@ class StatusairController extends Controller
         return response()->json(['success'=>'Data is successfully added ','data'=>json_encode($statusairs)]);
         //return response()->json(['response' => $statusairs]);
     }
+
+    public function chartstatus()
+    {
+        $chartstatuson = StatusAir::where('power_status','ON')->count();
+        $chartstatusoff = StatusAir::where('power_status','OFF')->count();
+        return view('home', [
+            'chartstatuson' => $chartstatuson,
+            'chartstatusoff' => $chartstatusoff,
+        ]);
+        // echo $chartstatus;
+    }
 }

@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-<caption><h1>Report Air Conditioner Low Performance</h1></caption>
+<caption><h1>Air Conditioner Low Performance Report </h1></caption>
     <table>
         <thead>
             <tr align="center">

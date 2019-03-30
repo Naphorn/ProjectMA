@@ -7,7 +7,7 @@
 <div class="container"><br>
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">Power Status</h3>
+            <h3 class="box-title">Status Power</h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -31,6 +31,9 @@
             </div>
         </div>
     </div>
+
+    <button><a href="{{ url('/getpdf') }}">View Report</a></button>
+
 </div>
 
 <script>

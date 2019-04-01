@@ -60,6 +60,7 @@
                 </tr>
                 @endforeach
             </table>
+            {{ $statusairs->links() }}
         </div>
     </div>
 </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\StatusAir;
 use App\Level;
 use App\Building;
+use Illuminate\Support\Facades\DB;
 
 class StatusairController extends Controller
 {
@@ -16,7 +17,7 @@ class StatusairController extends Controller
      */
     public function index()
     {
-        $statusairs = StatusAir::get();
+        $statusairs = StatusAir::paginate(10);
         return view('admin.adminstatus', compact('statusairs'));
     }
 
@@ -170,5 +171,34 @@ class StatusairController extends Controller
         // $statusairs =  json_decode(json_encode($statusairs));
         return response()->json(['success'=>'Data is successfully added ','data'=>json_encode($statusairs)]);
         //return response()->json(['response' => $statusairs]);
+    }
+
+    public function chartstatus()
+    {
+        // Chart สถานะ เปิด/ปิด เครื่องปรับอากาศ
+        $chartstatuson = StatusAir::where('power_status','ON')->count();
+        $chartstatusoff = StatusAir::where('power_status','OFF')->count();
+        // Chart ค่าประสิทธิภาพเครื่องปรับอากาศ
+        $chartperformance5 = StatusAir::where('performance','=',5)->count();
+        $chartperformance4 = StatusAir::where('performance','=',4)->count();
+        $chartperformance3 = StatusAir::where('performance','=',3)->count();
+        $chartperformance2 = StatusAir::where('performance','=',2)->count();
+        $chartperformance1 = StatusAir::where('performance','=',1)->count();
+        // Chart จำนวนเครื่องปรับอากาศ/เวลา
+        // $usageperiod = StatusAir::where(DB::raw("(DATE_FORMAT(created_at,'%Y'))"),date('Y'))->get();
+
+        // ---------------------------------------------------------------------------------------- //
+        return view('home', [
+            'chartstatuson' => $chartstatuson,
+            'chartstatusoff' => $chartstatusoff,
+            'chartperformance5' => $chartperformance5,
+            'chartperformance4' => $chartperformance4,
+            'chartperformance3' => $chartperformance3,
+            'chartperformance2' => $chartperformance2,
+            'chartperformance1' => $chartperformance1,
+            // 'usageperiod' => $usageperiod,
+        ]);
+        // echo $usageperiod;
+        // dd($usageperiod);
     }
 }

@@ -56,6 +56,9 @@ Route::get('/modelnotify', function () {
     return $post;
 });
 
+Route::get('/levelon/{id}', 'StatusairController@poweron');
+Route::get('/leveloff/{id}', 'StatusairController@poweroff');
+
 Route::get('/getpdf', 'PDFController@getPDF');
 
 Route::get('/home', 'StatusairController@chartstatus');

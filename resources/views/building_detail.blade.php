@@ -36,7 +36,10 @@
     @foreach($statusairs as $row)
         <script>
             var cr = document.getElementById('{{$row->room_no}}');
-            if('{{$row->performance}}'==5){
+            if('{{$row->power_status}}'=='OFF'){
+                cr.style.backgroundColor = "#000000"
+            }
+            else if('{{$row->performance}}'==5 ){
                 cr.style.backgroundColor = "#00FF00"
             }
             else if('{{$row->performance}}'>=4 && '{{$row->performance}}'<=4.99){
@@ -48,9 +51,10 @@
             else if('{{$row->performance}}'>=2 && '{{$row->performance}}'<=2.99){
                 cr.style.backgroundColor = "#FFA500"
             }
-            else if('{{$row->performance}}'>=0.00 && '{{$row->performance}}'<=1.99){
+            else if('{{$row->performance}}'>0.00 && '{{$row->performance}}'<=1.99){
                 cr.style.backgroundColor = "#FF0000"
             }
+
         </script>
     @endforeach
 

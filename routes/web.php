@@ -56,6 +56,8 @@ Route::get('/modelnotify', function () {
     return $post;
 });
 
+Route::get('/getpdf', 'PDFController@getPDF');
+
 Route::get('/home', 'StatusairController@chartstatus');
 Route::get('/ajax_get_data_room_detail/{id}', 'StatusairController@room_detail');
 

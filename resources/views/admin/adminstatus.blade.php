@@ -30,6 +30,7 @@
                     <th>Wind speed</th>
                     <th>EER</th>
                     <th>Status</th>
+                    <th>Control</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>

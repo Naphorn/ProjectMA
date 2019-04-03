@@ -44,7 +44,7 @@ class BuildingController extends Controller
             'building_name' => $request->get('building_name'),
         ]);
         $builds->save();
-        return view("home")->with('success','Complet');
+        return view("admin")->with('success','Complet');
     }
 
     /**
@@ -85,7 +85,7 @@ class BuildingController extends Controller
         $builds->building_name = $request->get('building_name');
 
         $builds->save();
-        return view("home")->with('success','Update Complet');
+        return view("admin")->with('success','Update Complet');
     }
 
     /**
@@ -99,6 +99,6 @@ class BuildingController extends Controller
         // dd($id);
         $builds = Building::find($id);
         $builds->delete();
-        return view("home")->with('success', 'Delete data successfully');
+        return view("admin")->with('success', 'Delete data successfully');
     }
 }

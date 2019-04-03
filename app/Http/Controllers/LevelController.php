@@ -46,7 +46,7 @@ class LevelController extends Controller
             'imglink' => $request->get('imglink')
         ]);
         $levels->save();
-        return view("home")->with('success','Complet');
+        return view("admin")->with('success','Complet');
     }
 
     /**
@@ -93,7 +93,7 @@ class LevelController extends Controller
         $levels->imglink = $request->get('imglink');
 
         $levels->save();
-        return view("home")->with('success','Update Complet');
+        return view("admin")->with('success','Update Complet');
     }
 
     /**
@@ -106,6 +106,6 @@ class LevelController extends Controller
     {
         $levels = Level::find($id);
         $levels->delete();
-        return view("home")->with('success', 'Delete data successfully');
+        return view("admin")->with('success', 'Delete data successfully');
     }
 }

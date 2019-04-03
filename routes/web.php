@@ -33,8 +33,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/levels', function () {
-    return view('levels');
+Route::get('/admin', function () {
+    return view('admin');
 });
 
 // Route::get('/notify', function () {

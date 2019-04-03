@@ -50,7 +50,7 @@ class UsersController extends Controller
             'password_confirmation' => $request->get('password_confirmation'),
         ]);
         $user->save();
-        return view("home")->with('success','Complet');
+        return view("admin")->with('success','Complet');
     }
 
     /**
@@ -99,7 +99,7 @@ class UsersController extends Controller
         $user->password = $request->get('password_confirmation');
 
         $user->save();
-        return view("home")->with('success','Update Complet');
+        return view("admin")->with('success','Update Complet');
     }
 
     /**
@@ -113,6 +113,6 @@ class UsersController extends Controller
         // dd($id);
         $user = User::find($id);
         $user->delete();
-        return view("home")->with('success', 'Delete data successfully');
+        return view("admin")->with('success', 'Delete data successfully');
     }
 }

@@ -111,53 +111,8 @@
     </div>
 </div>
 {{-- ------------------------------------------------------------------------------------------ --}}
-{{-- ----------------------------------------Status Usage Period------------------------------- --}}
-{{-- <div class="box box-default">
-    <div class="box-header with-border">
-        <h3 class="box-title">Usage Period</h3>
-        <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-        </div>
-    </div>
-    <!-- /.box-header -->
-    <div class="box-body">
-        <div class="row">
-            <div class="col-md-auto">
-                <div class="chart-responsive">
-                    <canvas id="myChartUsagePeriod" height="90px"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        var Power = document.getElementById('myChartUsagePeriod').getContext('2d');
-        var myChartUsagePeriod = new Chart(Power, {
-            type: 'line',
-            data: {
-                labels: ['00:00', '02:00', '04:00', '06:00', '08:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00'],
-                datasets: [{
-                    label: 'Usage Period',
-                    data: [{{ $usageperiod }}, {{ $usageperiod }}, {{ $usageperiod }}, {{ $usageperiod }}, {{ $usageperiod }}, ],
-                    borderColor: [
-                        'rgba(0, 0, 255, 5)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: { yAxes: [{ ticks: { beginAtZero: true } }] }
-            }
-        });
-    </script>
-</div> --}}
-{{-- ------------------------------------------------------------------------------------------ --}}
 <button><a href="{{ url('/getpdf') }}">View Report</a></button>
 {{-- ------------------------------------------------------------------------------------------ --}}
 </div>
-
-
-
-
 @endauth
 @endsection

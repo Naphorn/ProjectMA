@@ -67,7 +67,7 @@ class StatusairController extends Controller
             'power_status' => $request->get('power_status'),
         ]);
         $statusairs->save();
-        return view("home")->with('success','Complet');
+        return view("admin")->with('success','Complet');
     }
 
     /**
@@ -130,7 +130,7 @@ class StatusairController extends Controller
         $statusairs->power_status = $request->get('power_status');
 
         $statusairs->save();
-        return view("home")->with('success','Update Complet');
+        return view("admin")->with('success','Update Complet');
     }
 
     /**
@@ -143,7 +143,7 @@ class StatusairController extends Controller
     {
         $statusairs = StatusAir::find($id);
         $statusairs->delete();
-        return view("home")->with('success', 'Delete data successfully');
+        return view("admin")->with('success', 'Delete data successfully');
     }
 
     // ควบคุม switch ON ของเครื่องปรับอากาศ

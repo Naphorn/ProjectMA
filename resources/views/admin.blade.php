@@ -6,6 +6,10 @@
 @auth
     <div class="container"><br>
         <div align="center">
+            <a class="btn btn-primary" style="width:50%; font-size:20px;" href="{{ url('/home') }}">Home</a>
+        </div>
+        <br>
+        <div align="center">
             <a class="btn btn-primary" style="width:50%; font-size:20px;" href="{{ url('/adminuser') }}">User Data</a>
         </div>
         <br>

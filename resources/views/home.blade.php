@@ -31,7 +31,7 @@
                 var myChartPower = new Chart(Power, {
                     type: 'pie',
                     data: {
-                        labels: ['OFF','ON',],
+                        labels: ['OFF : {{ $chartstatusoff }}','ON : {{ $chartstatuson }}',],
                         datasets: [{
                             label: '',
                             data: [{{ $chartstatusoff }}, {{ $chartstatuson }}],
@@ -80,9 +80,10 @@
                 var myChartperformance = new Chart(performance, {
                     type: 'bar',
                     data: {
-                        labels: ['Status Performance 1','Status Performance 2','Status Performance 3','Status Performance 4','Status Performance 5'],
+                        labels: ['Performance 1 : {{ $chartperformance1 }}','Performance 2 : {{ $chartperformance2 }}','Performance 3 : {{ $chartperformance3 }}',
+                        'Performance 4 : {{ $chartperformance4 }}','Performance 5 : {{ $chartperformance5 }}'],
                         datasets: [{
-                            label: 'Number',
+                            label: "",
                             data: [{{ $chartperformance1 }}, {{ $chartperformance2 }}, {{ $chartperformance3 }}, {{ $chartperformance4 }}, {{ $chartperformance5 }}],
                             backgroundColor: [
                                 'rgba(255, 0, 0, 0.5)',

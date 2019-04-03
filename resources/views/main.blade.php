@@ -15,7 +15,7 @@
                 {{-- <img class="card-img-top" src="{{$value->cover_image}}" alt="Card image cap"> --}}
                 <div class="card-body">
                     <h1 class="card-title">{{$value->building_name}}</h1>
-                    <a href="building/{{$value->id}}" class="btn btn-primary">See more</a>
+                    <a href="building/{{$value->id}}" class="btn btn-primary">Show</a>
                 </div>
             </div>
         </div>

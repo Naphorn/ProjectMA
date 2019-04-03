@@ -16,6 +16,9 @@
         </ol>
     </nav>
 
+    <div style="background:#BEBEBE; width:20px; height:20px; float:left; margin:15px 0px 10px 10px;"></div>
+    <div style="float:left; font-size:20px; margin:10px;">Power off</div>
+
     <div style="background:#FF0000; width:20px; height:20px; float:left; margin:15px 0px 10px 10px;"></div>
     <div style="float:left; font-size:20px; margin:10px;">EER is very low</div>
 
@@ -37,7 +40,7 @@
         <script>
             var cr = document.getElementById('{{$row->room_no}}');
             if('{{$row->power_status}}'=='OFF'){
-                cr.style.backgroundColor = "#000000"
+                cr.style.backgroundColor = "#BEBEBE"
             }
             else if('{{$row->performance}}'==5 ){
                 cr.style.backgroundColor = "#00FF00"

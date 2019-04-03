@@ -14,7 +14,7 @@
                 {{-- <img class="card-img-top" src="{{$value->imglink}}" alt="Card image cap"> --}}
                 <div class="card-body">
                     <h1 class="card-title">{{$value->level_name}}</h1>
-                    <a href="deital/{{$value->building_id}}/{{$value->id}}" class="btn btn-primary">See more</a>
+                    <a href="deital/{{$value->building_id}}/{{$value->id}}" class="btn btn-primary">Show</a>
                 </div>
             </div>
         </div>
